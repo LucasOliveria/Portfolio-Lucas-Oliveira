@@ -1,0 +1,74 @@
+.container-home {
+  max-width: 100vw;
+}
+
+.container-left h1 {
+  max-width: 334px;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  letter-spacing: 0rem;
+}
+
+.container-left h1 span {
+  color: #5ef6ff;
+}
+
+.container-photo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container-photo img[alt="photo"] {
+  position: absolute;
+  top: -1.3rem;
+}
+
+.container-left h3 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #5ef6ff;
+  margin: 1.2rem 0 0 0;
+}
+
+.container-left p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.home-page-content {
+  margin: 0 1rem 15rem 0;
+  position: relative;
+}
+
+.home-page-content .home-text {
+  position: absolute;
+  top: 2.5rem;
+  left: 3.5rem;
+  right: 3.6rem;
+}
+
+.home-text p {
+  margin-bottom: 1.2rem;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.home-text p span {
+  color: #5ef6ff;
+}
+
+img[alt="robot-cute-proto-1"] {
+  width: 15rem;
+  position: absolute;
+  right: 1rem;
+  bottom: -6rem;
+}

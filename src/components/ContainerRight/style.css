@@ -1,0 +1,37 @@
+.container-right {
+  display: flex;
+  justify-content: center;
+  min-width: calc(100vw - 65rem);
+  position: relative;
+}
+
+.page-content-container {
+  position: relative;
+}
+
+img[alt="tech-line-up"],
+img[alt="tech-line-down"] {
+  position: absolute;
+}
+
+img[alt="tech-line-up"] {
+  top: 0;
+  right: 0;
+}
+
+img[alt="tech-line-down"] {
+  bottom: 0;
+  left: 0;
+}
+
+.page-content-container h3 {
+  margin: 5.7rem 0 2.6rem 0;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-shadow:
+    4px 4px 10px #9dfcaa,
+    4px 4px 21px #9dfcaa,
+    4px 4px 150px #9dfcaa;
+  color: #9dfcaa;
+}

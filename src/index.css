@@ -17,4 +17,11 @@ body {
   font-family: "Rajdhani", sans-serif;
   font-style: normal;
   background-color: #000c24;
+  color: #ffffff
+}
+
+.main-generic {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

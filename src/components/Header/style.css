@@ -7,6 +7,7 @@ header {
   background-color: #000c24b0;
   backdrop-filter: blur(0.4rem);
   position: fixed;
+  z-index: 3;
   top: 0;
   right: 0;
   left: 0;
@@ -19,6 +20,10 @@ header img {
 header img[alt="cyberpunk-icon"] {
   width: 4rem;
   margin-left: 2.2rem;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .menu {
@@ -34,7 +39,6 @@ header img[alt="cyberpunk-icon"] {
 .menu-content li {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .menu-content li img {
@@ -43,14 +47,19 @@ header img[alt="cyberpunk-icon"] {
 
 .img-visible {
   visibility: visible;
+  opacity: 1;
+}
+
+.img-visible,
+.menu-content li p,
+.social-menu img {
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .img-hidden {
   visibility: hidden;
-}
-
-.menu-content li a {
-  text-decoration: none;
+  opacity: 0;
 }
 
 .menu-content li a.active p {
@@ -61,19 +70,14 @@ header img[alt="cyberpunk-icon"] {
   font-size: 1.8rem;
   font-weight: 600;
   color: #ffffff;
-  transition: all 0.3s;
 }
 
-.menu-content li:hover p {
+.menu-content li p:hover {
   color: #5ef6ff;
   text-shadow:
-    0 0 10px #5ef6ff,
-    0 0 21px #5ef6ff,
-    0 0 42px #5ef6ff,
-    0 0 82px #5ef6ff,
-    0 0 92px #5ef6ff,
-    0 0 102px #5ef6ff,
-    0px 0px 150px #5ef6ff;
+    4px 4px 10px #5ef6ff,
+    4px 4px 21px #5ef6ff,
+    4px 4px 150px #5ef6ff;
 }
 
 .social-menu {
@@ -88,11 +92,6 @@ header img[alt="cyberpunk-icon"] {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
-
-.social-menu img {
-  transition: all 0.3s;
-  cursor: pointer;
 }
 
 .social-menu img:hover {
