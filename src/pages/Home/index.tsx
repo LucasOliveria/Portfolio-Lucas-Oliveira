@@ -4,9 +4,12 @@ import './style.css'
 function Home() {
   const value = useStatesContext()
   return (
-    <>
-      {value.test}
-    </>
+    <div className="container-home">
+      <main>
+        <h1 style={{ color: "white" }}>hello</h1>
+      </main>
+      <div className="container-gif"></div>
+    </div>
   )
 }
 
