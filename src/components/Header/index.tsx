@@ -1,10 +1,10 @@
-import './style.css'
-import cyberpunkPersonIcon from "../../assets/otherImages/cyberpunk-person-header.svg"
+import { NavLink, useLocation } from "react-router-dom"
 import currentFolderIcon from "../../assets/otherImages/currenty-folder.svg"
+import cyberpunkPersonIcon from "../../assets/otherImages/cyberpunk-person-header.svg"
 import emailIcon from "../../assets/social/e-mail.svg"
-import linkedinIcon from "../../assets/social/linkedin.svg"
 import githubIcon from "../../assets/social/github.svg"
-import { useLocation, NavLink } from "react-router-dom";
+import linkedinIcon from "../../assets/social/linkedin.svg"
+import './style.css'
 
 function Header() {
   const location = useLocation()

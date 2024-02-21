@@ -4,12 +4,9 @@ import robotProto1 from "../../assets/robots/robot-cute-proto-1.svg";
 import screenTemplateAboutMe from "../../assets/screenTemplates/screen-template-about-me.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
-import useStatesContext from '../../hooks/useStatesContext';
 import './style.css';
 
 function Home() {
-  const value = useStatesContext()
-
   return (
     <div className="container-home">
       <main className='main-generic'>
