@@ -10,7 +10,7 @@ import './style.css';
 
 function Home() {
   function handleDownloadFile() {
-    const curriculum: string = "./dist/src/database/Curriculo-Lucas-Oliveira.pdf";
+    const curriculum: string = "src/database/Curriculo-Lucas-Oliveira.pdf";
 
     fetch(curriculum)
       .then(response => response.blob())
