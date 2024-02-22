@@ -12,6 +12,7 @@
 img[alt="tech-line-up"],
 img[alt="tech-line-down"] {
   position: absolute;
+  width: 40rem;
 }
 
 img[alt="tech-line-up"] {

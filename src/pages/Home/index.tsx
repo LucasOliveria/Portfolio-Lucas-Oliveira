@@ -1,4 +1,6 @@
+import { saveAs } from "file-saver";
 import backgroundPhoto from "../../assets/otherImages/background-photo.svg";
+import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import photo from "../../assets/otherImages/photo.svg";
 import robotProto1 from "../../assets/robots/robot-cute-proto-1.svg";
 import screenTemplateAboutMe from "../../assets/screenTemplates/screen-template-about-me.svg";
@@ -7,6 +9,11 @@ import ContainerRight from '../../components/ContainerRight';
 import './style.css';
 
 function Home() {
+  function handleDownloadFile() {
+    const curriculum: string = "./src/database/Curriculo-Lucas-Oliveira.pdf";
+
+    saveAs(curriculum)
+  }
   return (
     <div className="container-home">
       <main className='main-generic'>
@@ -18,12 +25,20 @@ function Home() {
           </div>
           <h3>Lucas Oliveira</h3>
           <p>Desenvolvedor FullStack</p>
+          <div className="container-cv-button">
+            <div className="contains-cv-button">
+              <button onClick={handleDownloadFile}>
+                <p>
+                  Baixar CV
+                </p>
+              </button>
+              <img src={buttonTemplate} alt="button-template-blur" />
+            </div>
+          </div>
         </ContainerLeft>
         <ContainerRight title='Sobre mim'>
           <div className="home-page-content">
-
             <img src={screenTemplateAboutMe} alt="screen-template-about-me" />
-
             <div className="home-text">
               <p>
                 Olá, me chamo <span>Lucas Oliveira</span> e sou um Desenvolvedor de Software apaixonado por tecnologia e cultura geek.
@@ -39,7 +54,12 @@ function Home() {
           </div>
         </ContainerRight>
       </main>
-      <div className="container-gif"></div>
+      <div className="container-gif">
+        <div></div>
+        <div className="background-home-gif">
+          <div className="background-home-gradient"></div>
+        </div>
+      </div>
     </div>
   )
 }
