@@ -12,7 +12,10 @@ function Home() {
   function handleDownloadFile() {
     const curriculum: string = "./src/database/Curriculo-Lucas-Oliveira.pdf";
 
-    saveAs(curriculum)
+    fetch(curriculum)
+      .then(response => response.blob())
+      .then(blob => saveAs(blob, 'Curriculo-Lucas-Oliveira.pdf'))
+      .catch(error => console.log("Não foi possível fazer o download", error));
   }
   return (
     <div className="container-home">
