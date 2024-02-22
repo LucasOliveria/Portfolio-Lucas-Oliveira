@@ -9,7 +9,7 @@ import ContainerRight from '../../components/ContainerRight';
 import './style.css';
 
 function Home() {
-  function handleDownloadFile() {
+  async function handleDownloadFile() {
     const curriculum: string = "src/database/Curriculo-Lucas-Oliveira.pdf";
 
     fetch(curriculum)
