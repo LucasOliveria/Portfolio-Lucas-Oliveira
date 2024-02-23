@@ -48,22 +48,17 @@
   line-height: 1.2;
 }
 
-
-.container-cv-button {
-  display: flex;
-  width: 53rem;
-  justify-content: center;
-}
-
 .contains-cv-button {
+  width: 247px;
+  height: 67px;
   position: relative;
   margin-top: 4rem;
 }
 
 .contains-cv-button button {
   all: unset;
-  width: 247px;
-  height: 67px;
+  width: 100%;
+  height: 100%;
   background-image: url("../../assets//otherImages/button-template.svg");
   background-repeat: no-repeat;
   background-size: contain;

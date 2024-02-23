@@ -1,4 +1,4 @@
-import { saveAs } from "file-saver";
+import { useState } from "react";
 import backgroundPhoto from "../../assets/otherImages/background-photo.svg";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import photo from "../../assets/otherImages/photo.svg";
@@ -9,13 +9,12 @@ import ContainerRight from '../../components/ContainerRight';
 import './style.css';
 
 function Home() {
-  async function handleDownloadFile() {
-    const curriculum: string = "src/database/Curriculo-Lucas-Oliveira.pdf";
+  const [download, setDownload] = useState("");
 
-    fetch(curriculum)
-      .then(response => response.blob())
-      .then(blob => saveAs(blob, 'Curriculo-Lucas-Oliveira.pdf'))
-      .catch(error => console.log("Não foi possível fazer o download", error));
+  async function handleDownloadFile() {
+    const timestamp = new Date().getTime();
+
+    setDownload(`https://drive.google.com/uc?export=download&id=153RxDbwHyYKcPfu12_dow-5PqHJDJtVj&t=${timestamp}`);
   }
 
   return (
@@ -29,15 +28,14 @@ function Home() {
           </div>
           <h3>Lucas Oliveira</h3>
           <p>Desenvolvedor FullStack</p>
-          <div className="container-cv-button">
-            <div className="contains-cv-button">
-              <button onClick={handleDownloadFile}>
-                <p>
-                  Baixar CV
-                </p>
-              </button>
-              <img src={buttonTemplate} alt="button-template-blur" />
-            </div>
+          <div className="contains-cv-button" >
+            <button onClick={handleDownloadFile}>
+              <p>
+                Baixar CV
+              </p>
+            </button>
+            <img src={buttonTemplate} alt="button-template-blur" />
+            {download && <iframe src={download} style={{ display: "none" }}></iframe>}
           </div>
         </ContainerLeft>
         <ContainerRight title='Sobre mim'>
