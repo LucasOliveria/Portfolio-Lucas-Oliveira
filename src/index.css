@@ -17,7 +17,8 @@ body {
   font-family: "Rajdhani", sans-serif;
   font-style: normal;
   background-color: #000c24;
-  color: #ffffff
+  overflow-y: hidden;
+  color: #ffffff;
 }
 
 .main-generic {

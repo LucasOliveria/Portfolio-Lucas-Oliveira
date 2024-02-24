@@ -1,0 +1,59 @@
+.container-gif-education {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 57rem;
+  background-image: url("../../assets/gifs/big-screen-pixel.gif");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+
+.background-gradient-up-education {
+  width: 100%;
+  height: 5rem;
+  background: linear-gradient(to bottom, #000c24 20%, #17141400 44%);
+}
+
+.background-gradient-down-education {
+  width: 100%;
+  height: 7rem;
+  background: linear-gradient(to top, #000c24 20%, #17141400 100%);
+}
+
+.education-page-content {
+  margin: 0 1rem 9rem 0;
+
+}
+
+.education-box {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.education-text {
+  position: absolute;
+  top: 1.32rem;
+  left: 6.58rem;
+  right: 5.87rem;
+  z-index: 1;
+}
+
+.education-text p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.7rem;
+}
+
+.education-text p span {
+  color: #5ef6ff;
+}
+
+img[alt="cyberpunk-ship"] {
+  width: 15rem;
+  position: absolute;
+  bottom: -6rem;
+  right: -2rem;
+}

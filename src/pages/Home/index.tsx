@@ -56,9 +56,9 @@ function Home() {
           </div>
         </ContainerRight>
       </main>
-      <div className="container-gif">
+      <div className="container-gif-home">
         <div></div>
-        <div className="background-home-gif">
+        <div className="background-gif-home" >
           <div className="background-home-gradient"></div>
         </div>
       </div>

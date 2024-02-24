@@ -1,4 +1,4 @@
-.container-right {
+.box-right {
   display: flex;
   justify-content: center;
   min-width: calc(100vw - 65rem);

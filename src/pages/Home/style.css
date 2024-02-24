@@ -122,13 +122,13 @@ img[alt="robot-cute-proto-1"] {
   bottom: -6rem;
 }
 
-.container-gif {
+.container-gif-home {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
 }
 
-.background-home-gif {
+.background-gif-home {
   width: 800px;
   height: 30rem;
   background-image: url("../../assets/gifs/landscape-pixel-city.gif");
