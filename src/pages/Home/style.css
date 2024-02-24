@@ -69,12 +69,17 @@
 
 .contains-cv-button button,
 img[alt="button-template-blur"] {
-  transition: all 0.3s;
+  transition: all 0.1s;
 }
 
 .contains-cv-button:hover button,
 .contains-cv-button:hover img[alt="button-template-blur"] {
-  transform: scale(1.1);
+  transform: scale(1.04);
+}
+
+.contains-cv-button:active button,
+.contains-cv-button:active img[alt="button-template-blur"] {
+  transform: scale(0.9);
 }
 
 .contains-cv-button button p {
