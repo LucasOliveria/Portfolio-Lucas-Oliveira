@@ -3,7 +3,7 @@ import ContainerRight from '../../components/ContainerRight'
 import './style.css'
 import screenTemplateEducation from "../../assets/screenTemplates/screen-template-education.svg";
 import cyberpunkShip1 from "../../assets/ships/cyberpunk_ship1.svg";
-import cyberpunkShip2 from "../../assets/ships/cyberpunk_ship2.svg";
+// import cyberpunkShip2 from "../../assets/ships/cyberpunk_ship2.svg";
 
 function Education() {
   return (
