@@ -97,3 +97,18 @@ header a {
 .social-menu img:hover {
   transform: scale(1.15);
 }
+
+
+@media (min-width: 1900px) and (max-width:2200px) {
+  header img[alt="cyberpunk-icon"] {
+    margin-left: 0rem;
+  }
+
+  .social-menu {
+    margin: 0;
+  }
+
+  header {
+    margin: 0 30rem;
+  }
+}

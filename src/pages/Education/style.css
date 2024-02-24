@@ -11,20 +11,22 @@
 }
 
 .background-gradient-up-education {
-  width: 100%;
   height: 5rem;
   background: linear-gradient(to bottom, #000c24 20%, #17141400 44%);
 }
 
+.background-gradient-up-education,
 .background-gradient-down-education {
   width: 100%;
+}
+
+.background-gradient-down-education {
   height: 7rem;
   background: linear-gradient(to top, #000c24 20%, #17141400 100%);
 }
 
 .education-page-content {
   margin: 0 1rem 9rem 0;
-
 }
 
 .education-box {
@@ -33,11 +35,15 @@
 }
 
 .education-text {
-  position: absolute;
   top: 1.32rem;
   left: 6.58rem;
   right: 5.87rem;
   z-index: 1;
+}
+
+.education-text,
+img[alt="cyberpunk-ship"] {
+  position: absolute;
 }
 
 .education-text p {

@@ -26,3 +26,9 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+@media (min-width: 1900px) and (max-width:2500px) {
+  .main-generic {
+    padding: 0 30rem;
+  }
+}

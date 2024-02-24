@@ -14,7 +14,9 @@
   letter-spacing: 0rem;
 }
 
-.container-left h1 span {
+.container-left h1 span,
+.container-left h3,
+.home-text p span {
   color: #5ef6ff;
 }
 
@@ -37,15 +39,25 @@
 .container-left h3 {
   font-size: 3.6rem;
   font-weight: 500;
-  line-height: 1.2;
-  color: #5ef6ff;
   margin: 1.5rem 0 0 0;
 }
 
-.container-left p {
-  font-size: 1.8rem;
-  font-weight: 600;
+.container-left h3,
+.container-left p,
+.contains-cv-button button p,
+.home-text p {
   line-height: 1.2;
+}
+
+.container-left p,
+.contains-cv-button button p,
+.home-text p {
+  font-weight: 600;
+}
+
+.container-left p,
+.home-text p {
+  font-size: 1.8rem;
 }
 
 .contains-cv-button {
@@ -72,9 +84,9 @@ img[alt="button-template-blur"] {
   transition: all 0.1s;
 }
 
-.contains-cv-button:hover button,
-.contains-cv-button:hover img[alt="button-template-blur"] {
-  transform: scale(1.04);
+.contains-cv-button:hover button {
+  background-image: url("../../assets/otherImages/button-template-pressed.svg");
+  color: #e73f3d;
 }
 
 .contains-cv-button:active button,
@@ -84,9 +96,7 @@ img[alt="button-template-blur"] {
 
 .contains-cv-button button p {
   text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 3rem;
   text-shadow:
     2px 2px 10px #f9f9f9,
     2px 2px 21px #f9f9f9,
@@ -111,13 +121,6 @@ img[alt="button-template-blur"] {
 
 .home-text p {
   margin-bottom: 1.2rem;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.home-text p span {
-  color: #5ef6ff;
 }
 
 img[alt="robot-cute-proto-1"] {
@@ -135,15 +138,24 @@ img[alt="robot-cute-proto-1"] {
 
 .background-gif-home {
   width: 800px;
-  height: 30rem;
   background-image: url("../../assets/gifs/landscape-pixel-city.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.background-home-gif .background-home-gradient {
+.background-gif-home,
+.background-home-gradient {
+  height: 35rem;
+}
+
+.background-home-gradient {
   width: 100%;
-  height: 30rem;
   background: linear-gradient(90deg, #000c24 15%, #17141400 44%);
+}
+
+@media (min-width: 1900px) and (max-width:2200px) {
+  .container-gif-home {
+    padding: 0 30rem;
+  }
 }

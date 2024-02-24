@@ -1,7 +1,11 @@
+.container-right {
+
+  width: calc(100vw - 65rem);
+}
+
 .box-right {
   display: flex;
   justify-content: center;
-  min-width: calc(100vw - 65rem);
   position: relative;
 }
 
@@ -35,4 +39,10 @@ img[alt="tech-line-down"] {
     4px 4px 21px #9dfcaa,
     4px 4px 150px #9dfcaa;
   color: #9dfcaa;
+}
+
+@media (min-width: 1900px) and (max-width:2600px) {
+  .container-right {
+    width: 75rem;
+  }
 }
