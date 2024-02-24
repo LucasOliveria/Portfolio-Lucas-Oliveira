@@ -124,8 +124,6 @@ img[alt="button-template-blur"] {
 }
 
 img[alt="robot-cute-proto-1"] {
-  width: 15rem;
-  position: absolute;
   right: 1rem;
   bottom: -6rem;
 }
@@ -152,10 +150,4 @@ img[alt="robot-cute-proto-1"] {
 .background-home-gradient {
   width: 100%;
   background: linear-gradient(90deg, #000c24 15%, #17141400 44%);
-}
-
-@media (min-width: 1900px) and (max-width:2200px) {
-  .container-gif-home {
-    padding: 0 30rem;
-  }
 }

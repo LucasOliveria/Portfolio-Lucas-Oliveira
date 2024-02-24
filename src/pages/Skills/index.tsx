@@ -1,6 +1,9 @@
+import robotProto2 from "../../assets/robots/robot-cute-proto-2.svg";
+import screenTemplateSkill from "../../assets/screenTemplates/screen-template-skills.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
-import './style.css'
+import { skills } from '../../database/skillDb';
+import './style.css';
 
 function Skills() {
   return (
@@ -12,14 +15,21 @@ function Skills() {
         </div>
       </ContainerLeft>
       <ContainerRight title='Habilidades'>
-        <div className="container-skills">
-          <div className="skill-box">
-            <img src="" alt="" />
-            <div className="symbol-and-name">
-              <img src="" alt="" />
-              <p>JavaScript</p>
-            </div>
-          </div>
+        <div className="skills-page-container">
+          {skills.map((skill) => {
+            const { id, symbol, name } = skill;
+
+            return (
+              <div key={id} className="skill-box">
+                <img src={screenTemplateSkill} alt="screen-template-skill" />
+                <div className="symbol-and-name">
+                  <img src={symbol} alt="skill-symbol" />
+                  <p>{name}</p>
+                </div>
+              </div>
+            )
+          })}
+          <img src={robotProto2} alt="robot-cute-proto-2" />
         </div>
       </ContainerRight>
     </main>

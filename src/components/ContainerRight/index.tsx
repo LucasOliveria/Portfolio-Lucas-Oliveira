@@ -11,8 +11,8 @@ function ContainerRight({ children, title }: { children: ReactNode, title: strin
           <img src={techLineUp} alt="tech-line-up" />
           <h3>{title}</h3>
           {children}
+          <img src={techLineDown} alt="tech-line-down" />
         </div>
-        <img src={techLineDown} alt="tech-line-down" />
       </div>
     </div>
   )

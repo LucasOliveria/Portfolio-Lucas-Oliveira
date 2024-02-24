@@ -4,3 +4,10 @@
   align-items: center;
   width: 53rem;
 }
+
+@media (max-width: 1288px) {
+  .container-left {
+    width: 100vw;
+    margin-bottom: 5rem;
+  }
+}

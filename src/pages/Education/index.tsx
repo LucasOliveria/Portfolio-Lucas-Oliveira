@@ -16,9 +16,9 @@ function Education() {
       <ContainerRight title='Formação'>
         <div className="education-page-content">
           {educations.map((info) => {
-            const { title, text, tech, ship } = info
+            const { id, title, text, tech, ship } = info
             return (
-              <div className="education-box">
+              <div key={id} className="education-box">
                 <img src={screenTemplateEducation} alt="screen-template-education" />
                 <div className="education-text">
                   <p><span>{title}</span></p>
