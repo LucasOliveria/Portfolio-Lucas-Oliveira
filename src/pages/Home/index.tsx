@@ -40,17 +40,19 @@ function Home() {
         </ContainerLeft>
         <ContainerRight title='Sobre mim'>
           <div className="home-page-content">
-            <img src={screenTemplateAboutMe} alt="screen-template-about-me" />
-            <div className="home-text">
-              <p>
-                Olá, me chamo <span>Lucas Oliveira</span> e sou um Desenvolvedor de Software apaixonado por tecnologia e cultura geek.
-              </p>
-              <p>
-                Comecei minha migração de carreira para a área de T.I. em 2022, desenvolvendo habilidades sólido no Frontend, Backend e  em projetos autônomos para <span>web</span> no GitHub e em produção em plataformas de deploy.
-              </p>
-              <p>
-                Comunicação, foco nos detalhes, proatividade, autonomia e aptidão para aprender <span>novas ferramentas e habilidades</span> de maneira rápida são os principais pontos que me definem profissionalmente. Com os anos de experiência pude desenvolver meu senso de responsabilidade para com os resultados, buscando melhores maneiras de solucionar os problemas.
-              </p>
+            <div >
+              <img src={screenTemplateAboutMe} alt="screen-template-about-me" />
+              <div className="home-text">
+                <p>
+                  Olá, me chamo <span>Lucas Oliveira</span> e sou um Desenvolvedor de Software apaixonado por tecnologia e cultura geek.
+                </p>
+                <p>
+                  Comecei minha migração de carreira para a área de T.I. em 2022, desenvolvendo habilidades sólido no Frontend, Backend e  em projetos autônomos para <span>web</span> no GitHub e em produção em plataformas de deploy.
+                </p>
+                <p>
+                  Comunicação, foco nos detalhes, proatividade, autonomia e aptidão para aprender <span>novas ferramentas e habilidades</span> de maneira rápida são os principais pontos que me definem profissionalmente. Com os anos de experiência pude desenvolver meu senso de responsabilidade para com os resultados, buscando melhores maneiras de solucionar os problemas.
+                </p>
+              </div>
             </div>
             <img src={robotProto1} alt="robot-cute-proto-1" />
           </div>

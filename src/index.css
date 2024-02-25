@@ -16,8 +16,7 @@ body {
   font-size: 1.6rem;
   font-family: "Rajdhani", sans-serif;
   font-style: normal;
-  background-color: #000c24;
-  /* overflow-y: hidden; */
+  overflow-y: hidden;
   color: #ffffff;
 }
 
@@ -30,8 +29,12 @@ body {
 img[alt="cyberpunk-ship"],
 img[alt="robot-cute-proto-2"],
 img[alt="robot-cute-proto-1"] {
-  width: 15rem;
   position: absolute;
+}
+
+img[alt="cyberpunk-ship"],
+img[alt="robot-cute-proto-1"] {
+  width: 15rem;
 }
 
 /* @media (min-width: 1900px) and (max-width:2500px) {

@@ -33,6 +33,17 @@
 
 .skill-box {
   position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.skill-box:hover {
+  transform: scale(1.09);
+}
+
+.skill-box:active {
+  transform: scale(1);
+  transition: all 0.1s;
 }
 
 .symbol-and-name {
@@ -61,8 +72,9 @@ img[alt="skill-symbol"] {
 }
 
 img[alt="robot-cute-proto-2"] {
+  width: 11.5rem;
   top: -10rem;
-  right: 4rem;
+  right: 3rem;
 }
 
 @media (max-width: 1288px) {

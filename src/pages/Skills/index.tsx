@@ -6,6 +6,9 @@ import { skills } from '../../database/skillDb';
 import './style.css';
 
 function Skills() {
+  function handleRunLink(site: string) {
+    window.open(site, "_blank")
+  }
   return (
     <main className='main-generic'>
       <ContainerLeft>
@@ -17,10 +20,14 @@ function Skills() {
       <ContainerRight title='Habilidades'>
         <div className="skills-page-container">
           {skills.map((skill) => {
-            const { id, symbol, name } = skill;
+            const { id, site, symbol, name } = skill;
 
             return (
-              <div key={id} className="skill-box">
+              <div
+                key={id}
+                className="skill-box"
+                onClick={() => handleRunLink(site)}
+              >
                 <img src={screenTemplateSkill} alt="screen-template-skill" />
                 <div className="symbol-and-name">
                   <img src={symbol} alt="skill-symbol" />

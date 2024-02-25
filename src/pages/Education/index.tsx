@@ -19,11 +19,13 @@ function Education() {
             const { id, title, text, tech, ship } = info
             return (
               <div key={id} className="education-box">
-                <img src={screenTemplateEducation} alt="screen-template-education" />
-                <div className="education-text">
-                  <p><span>{title}</span></p>
-                  <p>{text}</p>
-                  <p>{tech}</p>
+                <div >
+                  <img src={screenTemplateEducation} alt="screen-template-education" />
+                  <div className="education-text">
+                    <p><span>{title}</span></p>
+                    <p>{text}</p>
+                    <p>{tech}</p>
+                  </div>
                 </div>
                 <img src={ship} alt="cyberpunk-ship" />
               </div>
