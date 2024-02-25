@@ -14,7 +14,7 @@ function Education() {
         </div>
       </ContainerLeft>
       <ContainerRight title='Formação'>
-        <div className="education-page-content">
+        <div className="education-page-content into-container-right-generic">
           {educations.map((info) => {
             const { id, title, text, tech, ship } = info
             return (

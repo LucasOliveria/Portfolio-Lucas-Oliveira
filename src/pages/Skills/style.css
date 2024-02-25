@@ -15,8 +15,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
-  width: 73rem;
-  margin: 0 1rem 9rem 0;
   position: relative;
 }
 
@@ -31,8 +29,7 @@
 }
 
 .skill-box:active {
-  transform: scale(1);
-  transition: all 0.1s;
+  transform: scale(1.05);
 }
 
 .symbol-and-name {

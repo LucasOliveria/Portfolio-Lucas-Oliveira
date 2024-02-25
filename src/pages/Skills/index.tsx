@@ -18,7 +18,7 @@ function Skills() {
         </div>
       </ContainerLeft>
       <ContainerRight title='Habilidades'>
-        <div className="skills-page-container">
+        <div className="skills-page-container into-container-right-generic">
           {skills.map((skill) => {
             const { id, site, symbol, name } = skill;
 

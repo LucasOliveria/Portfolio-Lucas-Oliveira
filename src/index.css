@@ -55,6 +55,11 @@ img[alt="robot-cute-proto-1"] {
   background: linear-gradient(to top, #000c24 20%, #17141400 100%);
 }
 
+.into-container-right-generic {
+  width: 73rem;
+  margin: 0 1rem 9rem 0;
+}
+
 @media (max-width: 1288px) {
   .container-gif-generic {
     background-position: center;

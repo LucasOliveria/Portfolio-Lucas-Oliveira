@@ -14,7 +14,7 @@ function Projects() {
       <ContainerRight title='Projetos'>
         <div>
           <img src="" alt="arrow-left" />
-          <div className="skills-page-container">
+          <div className="projects-page-container into-container-right-generic">
             <div
               className="project-box"
             >

@@ -39,7 +39,7 @@ function Home() {
           </div>
         </ContainerLeft>
         <ContainerRight title='Sobre mim'>
-          <div className="home-page-content">
+          <div className="home-page-content into-container-right-generic">
             <div >
               <img src={screenTemplateAboutMe} alt="screen-template-about-me" />
               <div className="home-text">
