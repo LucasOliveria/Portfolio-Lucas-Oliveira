@@ -37,6 +37,38 @@ img[alt="robot-cute-proto-1"] {
   width: 15rem;
 }
 
+.container-gif-generic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100% 100%;
+}
+
+.up-gradient {
+  background: linear-gradient(to bottom, #000c24 20%, #17141400 44%);
+}
+
+.down-gradient {
+  background: linear-gradient(to top, #000c24 20%, #17141400 100%);
+}
+
+@media (max-width: 1288px) {
+  .container-gif-generic {
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* .background-gradient-up-education,
+.background-gradient-down-education,
+.background-gradient-up-skills,
+.background-gradient-down-skill {
+  width: 100%;
+} */
+
 /* @media (min-width: 1900px) and (max-width:2500px) {
   .main-generic {
     padding: 0 25rem;

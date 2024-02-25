@@ -1,0 +1,12 @@
+.container-gif-projects {
+  height: 55rem;
+  background-image: url("../../assets/gifs/mecha-project-pixel.gif");
+}
+
+.background-gradient-up-projects {
+  height: 5rem;
+}
+
+.background-gradient-down-projects {
+  height: 8rem;
+}

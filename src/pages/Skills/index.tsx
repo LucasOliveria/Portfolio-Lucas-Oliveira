@@ -12,9 +12,9 @@ function Skills() {
   return (
     <main className='main-generic'>
       <ContainerLeft>
-        <div className="container-gif-skills">
-          <div className='background-gradient-up-skills'></div>
-          <div className='background-gradient-down-skills'></div>
+        <div className="container-gif-skills container-gif-generic">
+          <div className='background-gradient-up-skills up-gradient'></div>
+          <div className='background-gradient-down-skills down-gradient'></div>
         </div>
       </ContainerLeft>
       <ContainerRight title='Habilidades'>

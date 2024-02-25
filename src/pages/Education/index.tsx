@@ -8,9 +8,9 @@ function Education() {
   return (
     <main className='main-generic'>
       <ContainerLeft>
-        <div className="container-gif-education">
-          <div className='background-gradient-up-education'></div>
-          <div className='background-gradient-down-education'></div>
+        <div className="container-gif-education container-gif-generic">
+          <div className='background-gradient-up-education up-gradient'></div>
+          <div className='background-gradient-down-education down-gradient'></div>
         </div>
       </ContainerLeft>
       <ContainerRight title='Formação'>

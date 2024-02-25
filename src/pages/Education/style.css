@@ -1,28 +1,14 @@
 .container-gif-education {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
   height: 57rem;
   background-image: url("../../assets/gifs/big-screen-pixel.gif");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: 100% 100%;
 }
 
 .background-gradient-up-education {
   height: 5rem;
-  background: linear-gradient(to bottom, #000c24 20%, #17141400 44%);
-}
-
-.background-gradient-up-education,
-.background-gradient-down-education {
-  width: 100%;
 }
 
 .background-gradient-down-education {
   height: 7rem;
-  background: linear-gradient(to top, #000c24 20%, #17141400 100%);
 }
 
 .education-page-content {
@@ -61,11 +47,4 @@ img[alt="cyberpunk-ship"] {
 img[alt="cyberpunk-ship"] {
   bottom: -6rem;
   right: 1rem;
-}
-
-@media (max-width: 1288px) {
-  .container-gif-education {
-    background-position: center;
-    background-size: contain;
-  }
 }
