@@ -1,14 +1,14 @@
-import ContainerLeft from '../../components/ContainerLeft';
-import ContainerRight from '../../components/ContainerRight';
-import './style.css'
+import { useEffect, useRef } from 'react';
 import arrowLeft from "../../assets/otherImages/arrow-left.svg";
 import arrowRight from "../../assets/otherImages/arrow-right.svg";
-import screenTemplateGeneric from "../../assets/screenTemplates/screen-template-generic.svg";
-import robotProto3 from "../../assets/robots/robot-cute-proto-3.svg";
-import projectPhoto from "../../assets/projectsPhotos/influencer.png";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
-import { useEffect, useRef, useState } from 'react';
+import projectPhoto from "../../assets/projectsPhotos/influencer.png";
+import robotProto3 from "../../assets/robots/robot-cute-proto-3.svg";
+import screenTemplateGeneric from "../../assets/screenTemplates/screen-template-generic.svg";
+import ContainerLeft from '../../components/ContainerLeft';
+import ContainerRight from '../../components/ContainerRight';
 import useStatesContext from '../../hooks/useStatesContext';
+import './style.css';
 
 function Projects() {
   const carouselRef = useRef<any>(null);
