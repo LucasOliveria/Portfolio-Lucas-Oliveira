@@ -7,36 +7,38 @@ import screenTemplateGeneric from "../../assets/screenTemplates/screen-template-
 import robotProto3 from "../../assets/robots/robot-cute-proto-3.svg";
 import projectPhoto from "../../assets/projectsPhotos/influencer.png";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function Projects() {
   const carousel = useRef<any>();
-  const [arrow, setArrow] = useState("left");
-  const [page, setPage] = useState(0)
+  const [arrow, setArrow] = useState("none");
 
   function handleCarousel(direction: string) {
-    let sum = page;
-
     if (direction === "right") {
-      carousel.current.scrollLeft += carousel.current.offsetWidth;
+      let forRight = carousel.current.scrollLeft += carousel.current.offsetWidth;
+
       setArrow("Midway");
 
-      setPage(sum += 1)
-      if (sum === 2) {
+      if (forRight + 1 >= carousel.current.offsetWidth + carousel.current.clientWidth || forRight + 1 >= carousel.current.scrollWidth) {
         setArrow("right");
       }
       return;
     }
 
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    let forLeft = carousel.current.scrollLeft -= carousel.current.offsetWidth;
 
     setArrow("Midway");
 
-    setPage(sum -= 1)
-    if (sum === 0) {
+    if (forLeft <= 0) {
       setArrow("left");
     }
   }
+
+  useEffect(() => {
+    if (carousel.current.scrollLeft += carousel.current.offsetWidth !== carousel.current.scrollWidth) {
+      setArrow("left");
+    }
+  }, []);
 
   return (
     <main className='main-generic'>
@@ -51,7 +53,7 @@ function Projects() {
           <img
             onClick={() => handleCarousel("left")}
             src={arrowLeft} alt="arrow-left"
-            className={`${arrow === "left" ? "arrow-hidden" : "arrow-visible"}`}
+            className={`${arrow === "left" ? "arrow-hidden" : arrow === "Midway" || arrow === "right" ? "arrow-visible" : "arrow-hidden"}`}
           />
           <div
             ref={carousel}
@@ -124,7 +126,7 @@ function Projects() {
           <img
             onClick={() => handleCarousel("right")}
             src={arrowRight} alt="arrow-right"
-            className={`${arrow === "right" ? "arrow-hidden" : "arrow-visible"}`}
+            className={`${arrow === "right" ? "arrow-hidden" : arrow === "Midway" || arrow === "left" ? "arrow-visible" : "arrow-hidden"}`}
           />
           <img src={robotProto3} alt="robot-cute-proto-3" />
         </div>
