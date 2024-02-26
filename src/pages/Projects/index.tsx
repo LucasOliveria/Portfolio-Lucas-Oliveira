@@ -8,10 +8,11 @@ import robotProto3 from "../../assets/robots/robot-cute-proto-3.svg";
 import projectPhoto from "../../assets/projectsPhotos/influencer.png";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import { useEffect, useRef, useState } from 'react';
+import useStatesContext from '../../hooks/useStatesContext';
 
 function Projects() {
-  const carousel = useRef<any>();
-  const [arrow, setArrow] = useState("none");
+  const carouselRef = useRef<any>(null);
+  const { arrow, setArrow } = useStatesContext();
 
   function handleCarousel(direction: string) {
     if (direction === "left" && arrow === "left" || direction === "right" && arrow === "right") {
@@ -19,17 +20,17 @@ function Projects() {
     }
 
     if (direction === "right") {
-      let forRight = carousel.current.scrollLeft += carousel.current.offsetWidth;
+      let forRight = carouselRef.current.scrollLeft += carouselRef.current.offsetWidth;
 
       setArrow("Midway");
 
-      if (forRight + 1 >= carousel.current.offsetWidth + carousel.current.clientWidth || forRight + 1 >= carousel.current.scrollWidth) {
+      if (forRight + 1 >= carouselRef.current.offsetWidth + carouselRef.current.clientWidth || forRight + 1 >= carouselRef.current.scrollWidth) {
         setArrow("right");
       }
       return;
     }
 
-    let forLeft = carousel.current.scrollLeft -= carousel.current.offsetWidth;
+    let forLeft = carouselRef.current.scrollLeft -= carouselRef.current.offsetWidth;
 
     setArrow("Midway");
 
@@ -39,7 +40,7 @@ function Projects() {
   }
 
   useEffect(() => {
-    if (carousel.current.scrollLeft += carousel.current.offsetWidth !== carousel.current.scrollWidth) {
+    if (carouselRef.current.scrollLeft += carouselRef.current.offsetWidth !== carouselRef.current.scrollWidth) {
       setArrow("left");
     }
   }, []);
@@ -60,7 +61,7 @@ function Projects() {
             className={`${arrow === "left" ? "arrow-hidden" : arrow === "Midway" || arrow === "right" ? "arrow-visible" : "arrow-hidden"}`}
           />
           <div
-            ref={carousel}
+            ref={carouselRef}
             className='project-carousel'>
             <div className="project-box">
               <img src={screenTemplateGeneric} alt="screen-template-generic" />

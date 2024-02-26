@@ -21,7 +21,6 @@ function Skills() {
         <div className="skills-page-container into-container-right-generic">
           {skills.map((skill) => {
             const { id, site, symbol, name } = skill;
-
             return (
               <div
                 key={id}
