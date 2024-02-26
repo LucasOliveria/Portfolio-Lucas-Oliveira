@@ -14,6 +14,7 @@
 .projects-page-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 
@@ -21,6 +22,7 @@
 img[alt="arrow-right"],
 img[alt="arrow-left"] {
   width: 5rem;
+  height: 5rem;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -31,12 +33,16 @@ img[alt="arrow-left"]:hover {
 }
 
 .arrow-hidden {
-  visibility: hidden;
-  opacity: 0;
+  opacity: 0.4;
+}
+
+img[alt="arrow-left"].arrow-hidden:hover,
+img[alt="arrow-right"]:hover.arrow-hidden:hover {
+  transform: scale(1);
+  cursor: default;
 }
 
 .arrow-visible {
-  visibility: visible;
   opacity: 1;
 }
 

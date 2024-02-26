@@ -14,6 +14,10 @@ function Projects() {
   const [arrow, setArrow] = useState("none");
 
   function handleCarousel(direction: string) {
+    if (direction === "left" && arrow === "left" || direction === "right" && arrow === "right") {
+      return;
+    }
+
     if (direction === "right") {
       let forRight = carousel.current.scrollLeft += carousel.current.offsetWidth;
 
