@@ -84,16 +84,6 @@ img[alt="button-template-blur"] {
   transition: all 0.1s;
 }
 
-.contains-cv-button:hover button {
-  background-image: url("../../assets/otherImages/button-template-pressed.svg");
-  color: #e73f3d;
-}
-
-.contains-cv-button:active button,
-.contains-cv-button:active img[alt="button-template-blur"] {
-  transform: scale(0.9);
-}
-
 .contains-cv-button button p {
   text-align: center;
   font-size: 3rem;
