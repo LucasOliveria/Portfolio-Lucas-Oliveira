@@ -1,3 +1,4 @@
+import { useState } from "react";
 import backgroundPhoto from "../../assets/otherImages/background-photo.svg";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import photo from "../../assets/otherImages/photo.svg";
@@ -5,11 +6,10 @@ import robotProto1 from "../../assets/robots/robot-cute-proto-1.svg";
 import screenTemplateAboutMe from "../../assets/screenTemplates/screen-template-about-me.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
-import useStatesContext from "../../hooks/useStatesContext";
 import './style.css';
 
 function Home() {
-  const { download, setDownload } = useStatesContext();
+  const [download, setDownload] = useState("");
 
   async function handleDownloadFile() {
     const timestamp = new Date().getTime();
