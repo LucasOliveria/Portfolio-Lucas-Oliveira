@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
 import Education from "./pages/Education";
 import Home from "./pages/Home";
-import Portfolio from "./pages/PortFolio";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 
