@@ -9,30 +9,15 @@ import Skills from "./pages/Skills";
 function MainRoutes() {
   return (
     <Routes>
-      <Route path="/" element={
-        <Portfolio>
-          <Home />
-        </Portfolio>}
+      <Route path="/" element={<Home />}
       />
-      <Route path="/education" element={
-        <Portfolio>
-          <Education />
-        </Portfolio>}
+      <Route path="/education" element={<Education />}
       />
-      <Route path="/skills" element={
-        <Portfolio>
-          <Skills />
-        </Portfolio>}
+      <Route path="/skills" element={<Skills />}
       />
-      <Route path="/projects" element={
-        <Portfolio>
-          <Projects />
-        </Portfolio>}
+      <Route path="/projects" element={<Projects />}
       />
-      <Route path="/contact" element={
-        <Portfolio>
-          <Contact />
-        </Portfolio>}
+      <Route path="/contact" element={<Contact />}
       />
     </Routes>
   )

@@ -3,11 +3,14 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import MainRoutes from './router';
 import Context from './context/context';
+import Portfolio from './pages/PortFolio';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <Context>
     <BrowserRouter>
-      <MainRoutes />
+      <Portfolio>
+        <MainRoutes />
+      </Portfolio>
     </BrowserRouter>
   </Context>
 )
