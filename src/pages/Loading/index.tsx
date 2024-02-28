@@ -12,7 +12,6 @@ function Loading() {
     const timer = setInterval(() => {
       setPercentage((percentBar.current.offsetWidth * 100) / 267.28);
 
-      console.log(percentBar.current.offsetWidth);
       if (percentBar.current.offsetWidth >= "267") {
         clearInterval(timer)
         navigate("/home")
@@ -23,8 +22,7 @@ function Loading() {
 
   useEffect(() => {
     runPercentageAndredirector();
-  })
-
+  }, []);
 
   return (
     <div className='container-loading'>

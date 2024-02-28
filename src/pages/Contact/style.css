@@ -1,0 +1,25 @@
+.container-gif-contact {
+  height: 50rem;
+  background-image: url("../../assets/gifs/fuel-station-pixel.gif");
+}
+
+.background-gradient-up-contact {
+  height: 5rem;
+}
+
+.background-gradient-down-contact {
+  height: 7rem;
+}
+
+.container-contact {
+  display: flex;
+  border: 1px solid red;
+}
+
+.contact-box {
+  position: relative;
+}
+
+.contact-text {
+  position: absolute;
+}
