@@ -7,8 +7,9 @@ import './style.css';
 
 function Skills() {
   function handleRunLink(site: string) {
-    window.open(site, "_blank")
+    window.open(site, "_blank");
   }
+
   return (
     <main className='main-generic'>
       <ContainerLeft>

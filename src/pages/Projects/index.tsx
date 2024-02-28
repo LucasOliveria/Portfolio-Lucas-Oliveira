@@ -2,11 +2,11 @@ import { useEffect, useRef } from 'react';
 import arrowLeft from "../../assets/otherImages/arrow-left.svg";
 import arrowRight from "../../assets/otherImages/arrow-right.svg";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
-import projectPhoto from "../../assets/projectsPhotos/influencer.png";
 import robotProto3 from "../../assets/robots/robot-cute-proto-3.svg";
 import screenTemplateGeneric from "../../assets/screenTemplates/screen-template-generic.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
+import { projects } from '../../database/ProjectDb';
 import useStatesContext from '../../hooks/useStatesContext';
 import './style.css';
 
@@ -63,70 +63,28 @@ function Projects() {
           <div
             ref={carouselRef}
             className='project-carousel'>
-            <div className="project-box">
-              <img src={screenTemplateGeneric} alt="screen-template-generic" />
-              <div className="container-photo-description-link">
-                <img src={projectPhoto} alt="project-photo" />
-                <p><span>Projeto Influencer Hub</span></p>
-                <p>
-                  Aplicação de gerenciamento de informações de influenciadores. Nele é possível cadastrar, editar e apagar dados vizualizar informações dos influenciadores cadastrados, como nome, e-mail de contato, @ do canal, plataformas utilizadas e categorias de conteúdo.
-                </p>
-              </div>
-              <div className="container-project-button">
-                <button>
-                  <p>Link</p>
-                </button>
-                <img src={buttonTemplate} alt='button-template-blur' />
-              </div>
-            </div>
-            <div className="project-box">
-              <img src={screenTemplateGeneric} alt="screen-template-generic" />
-              <div className="container-photo-description-link">
-                <img src={projectPhoto} alt="project-photo" />
-                <p><span>2</span></p>
-                <p>
-                  Aplicação de gerenciamento de informações de influenciadores. Nele é possível cadastrar, editar e apagar dados vizualizar informações dos influenciadores cadastrados, como nome, e-mail de contato, @ do canal, plataformas utilizadas e categorias de conteúdo.
-                </p>
-              </div>
-              <div className="container-project-button">
-                <button>
-                  <p>Link</p>
-                </button>
-                <img src={buttonTemplate} alt='button-template-blur' />
-              </div>
-            </div>
-            <div className="project-box">
-              <img src={screenTemplateGeneric} alt="screen-template-generic" />
-              <div className="container-photo-description-link">
-                <img src={projectPhoto} alt="project-photo" />
-                <p><span>3</span></p>
-                <p>
-                  Aplicação de gerenciamento de informações de influenciadores. Nele é possível cadastrar, editar e apagar dados vizualizar informações dos influenciadores cadastrados, como nome, e-mail de contato, @ do canal, plataformas utilizadas e categorias de conteúdo.
-                </p>
-              </div>
-              <div className="container-project-button">
-                <button>
-                  <p>Link</p>
-                </button>
-                <img src={buttonTemplate} alt='button-template-blur' />
-              </div>
-            </div>
-            <div className="project-box">
-              <img src={screenTemplateGeneric} alt="screen-template-generic" />
-              <div className="container-photo-description-link">
-                <img src={projectPhoto} alt="project-photo" />
-                <p><span>4</span></p>
-                <p>
-                  Aplicação de gerenciamento de informações de influenciadores. Nele é possível cadastrar, editar e apagar dados vizualizar informações dos influenciadores cadastrados, como nome, e-mail de contato, @ do canal, plataformas utilizadas e categorias de conteúdo.
-                </p>
-              </div>
-              <div className="container-project-button">
-                <button>
-                  <p>Link</p>
-                </button>
-                <img src={buttonTemplate} alt='button-template-blur' />
-              </div>
-            </div>
+            {projects.map((project) => {
+              const { id, image, title, text, link } = project;
+              return (
+                <div
+                  key={id}
+                  className="project-box"
+                >
+                  <img src={screenTemplateGeneric} alt="screen-template-project" />
+                  <div className="container-photo-description-link">
+                    <img src={image} alt="project-photo" />
+                    <p><span>{title}</span></p>
+                    <p>{text}</p>
+                  </div>
+                  <div className="container-project-button">
+                    <button onClick={() => window.open(link, "_blank")}>
+                      <p>Link</p>
+                    </button>
+                    <img src={buttonTemplate} alt='button-template-blur' />
+                  </div>
+                </div>
+              )
+            })}
           </div>
           <img
             onClick={() => handleCarousel("right")}

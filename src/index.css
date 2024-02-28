@@ -12,6 +12,10 @@ html {
 
 :root {
   min-height: 100vh;
+  --ciano-color: #02f9f9;
+  --ciano-alternative: #5ef6ff;
+  --light-green: #9dfcaa;
+
 }
 
 body {

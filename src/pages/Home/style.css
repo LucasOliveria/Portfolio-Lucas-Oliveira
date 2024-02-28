@@ -17,7 +17,7 @@
 .container-left h1 span,
 .container-left h3,
 .home-text p span {
-  color: #5ef6ff;
+  color: var(--ciano-color);
 }
 
 .container-photo {

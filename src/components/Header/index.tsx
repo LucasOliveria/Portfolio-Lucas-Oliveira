@@ -14,7 +14,7 @@ function Header() {
       <NavLink to={"/"}>
         <div className="container-icon">
           <img src={cyberpunkPersonIcon} alt="cyberpunk-icon" />
-          <h3>L. Olivr</h3>
+          <h3>#LucasOlivr007</h3>
         </div>
       </NavLink>
       <nav className='menu'>

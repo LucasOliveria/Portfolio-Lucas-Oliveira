@@ -11,8 +11,8 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  border-bottom: 1px solid #FF4980;
-  box-shadow: 0px 15px 30px -15px #D043C6;
+  border-bottom: 1px solid var(--ciano-color);
+  box-shadow: 0px 15px 30px -15px var(--ciano-color);
 }
 
 header img {
@@ -26,15 +26,13 @@ header img {
 }
 
 .container-icon h3 {
-  /* margin-bottom: -0.5rem;
-  align-self: flex-end; */
   font-size: 2.4rem;
   font-weight: 600;
-  color: #9dfcaa;
+  color: var(--light-green);
 }
 
 .container-icon img[alt="cyberpunk-icon"] {
-  border-bottom: 1px solid #5ef6ff;
+  border-bottom: 1px solid var(--ciano-color);
   width: 4rem;
   margin-left: 2.2rem;
 }
@@ -80,7 +78,7 @@ header a {
 }
 
 .menu-content li a.active p {
-  color: #5ef6ff;
+  color: #02f9f9;
 }
 
 .menu-content li p {
@@ -90,11 +88,11 @@ header a {
 }
 
 .menu-content li p:hover {
-  color: #5ef6ff;
+  color: var(--ciano-color);
   text-shadow:
-    4px 4px 10px #5ef6ff,
-    4px 4px 21px #5ef6ff,
-    4px 4px 150px #5ef6ff;
+    4px 4px 10px var(--ciano-color),
+    4px 4px 21px var(--ciano-color),
+    4px 4px 150px var(--ciano-color);
 }
 
 .social-menu {

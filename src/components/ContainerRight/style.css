@@ -34,10 +34,10 @@ img[alt="tech-line-down"] {
   font-weight: 600;
   line-height: 1.2;
   text-shadow:
-    4px 4px 10px #9dfcaa,
-    4px 4px 21px #9dfcaa,
-    4px 4px 150px #9dfcaa;
-  color: #9dfcaa;
+    4px 4px 10px var(--light-green),
+    4px 4px 21px var(--light-green),
+    4px 4px 150px var(--light-green);
+  color: var(--light-green);
 }
 
 @media (min-width: 1900px) and (max-width:2600px) {

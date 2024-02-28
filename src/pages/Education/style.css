@@ -36,7 +36,7 @@ img[alt="cyberpunk-ship"] {
 }
 
 .education-text p span {
-  color: #5ef6ff;
+  color: var(--ciano-color);
 }
 
 img[alt="cyberpunk-ship"] {
