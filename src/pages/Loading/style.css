@@ -2,7 +2,7 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background-color: var(--background-color);
+  background-color: #000000;
   justify-content: center;
   align-items: center;
   position: absolute;

@@ -17,7 +17,7 @@ function Loading() {
         clearInterval(timer)
         navigate("/home")
       }
-    }, 120);
+    }, 90);
 
   }
 

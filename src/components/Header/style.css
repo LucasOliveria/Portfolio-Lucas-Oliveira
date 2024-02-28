@@ -11,8 +11,8 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  border-bottom: 1px solid var(--ciano-color);
-  box-shadow: 0px 15px 30px -15px var(--ciano-color);
+  border-bottom: 1px solid var(--intense-pink);
+  box-shadow: 0px 15px 30px -15px var(--purplish-pink);
 }
 
 header img {
