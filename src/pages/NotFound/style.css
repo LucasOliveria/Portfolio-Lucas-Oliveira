@@ -1,0 +1,45 @@
+.container-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.content-not-found-box {
+  display: flex;
+  justify-content: center;
+  width: 81rem;
+  position: relative;
+}
+
+img[alt="robot-cute-proto-5"],
+img[alt="robot-cute-proto-4"] {
+  position: absolute;
+  bottom: -3rem;
+}
+
+img[alt="robot-cute-proto-5"] {
+  left: -5rem;
+}
+
+img[alt="robot-cute-proto-4"] {
+  right: -3rem;
+}
+
+.not-found-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 73rem;
+  height: 34rem;
+  background-image: url("../../assets/screenTemplates/screen-template-about-me.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.not-found-box h1 {
+  font-family: 'Press Start 2P';
+  font-size: 3.6rem;
+  font-weight: 400;
+}

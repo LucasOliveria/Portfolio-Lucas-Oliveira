@@ -138,5 +138,5 @@ img[alt="robot-cute-proto-1"] {
 
 .background-home-gradient {
   width: 100%;
-  background: linear-gradient(90deg, #000c24 15%, #17141400 44%);
+  background: linear-gradient(90deg, var(--background-color) 15%, #17141400 44%);
 }

@@ -1,4 +1,5 @@
 @import url("styles/bottonHoverActive/style.css");
+@import url("./animations/style.css");
 
 html {
   font-size: 62.5%;
@@ -15,6 +16,7 @@ html {
   --ciano-color: #02f9f9;
   --ciano-alternative: #5ef6ff;
   --light-green: #9dfcaa;
+  --background-color: #000c24;
 
 }
 
@@ -54,11 +56,11 @@ img[alt="robot-cute-proto-1"] {
 }
 
 .up-gradient {
-  background: linear-gradient(to bottom, #000c24 20%, #17141400 44%);
+  background: linear-gradient(to bottom, var(--background-color) 20%, #17141400 44%);
 }
 
 .down-gradient {
-  background: linear-gradient(to top, #000c24 20%, #17141400 100%);
+  background: linear-gradient(to top, var(--background-color) 20%, #17141400 100%);
 }
 
 .into-container-right-generic {

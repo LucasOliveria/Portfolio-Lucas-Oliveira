@@ -7,14 +7,14 @@ import linkedinIcon from "../../assets/social/linkedin.svg"
 import './style.css'
 
 function Header() {
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <header>
-      <NavLink to={"/"}>
+      <NavLink to={"/home"}>
         <div className="container-icon">
           <img src={cyberpunkPersonIcon} alt="cyberpunk-icon" />
-          <h3>#LucasOlivr007</h3>
+          <h3>#LucasOlivr07</h3>
         </div>
       </NavLink>
       <nav className='menu'>
@@ -25,10 +25,9 @@ function Header() {
               src={currentFolderIcon}
               alt="folder-icon"
             />
-            <NavLink to={"/"}>
+            <NavLink to={"/home"}>
               <p>Sobre mim</p>
             </NavLink>
-
           </li>
           <li>
             <img

@@ -1,0 +1,74 @@
+@-webkit-keyframes load {}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.load {
+  -webkit-animation: load 3s ease-in-out both;
+  animation: load 3s ease-in-out both;
+}
+
+@-webkit-keyframes shake-vertical {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(8px);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+@keyframes shake-vertical {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(8px);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+
+
+.shake-vertical {
+  -webkit-animation: shake-vertical 5s ease-in-out infinite both;
+  animation: shake-vertical 5s ease-in-out infinite both;
+}
