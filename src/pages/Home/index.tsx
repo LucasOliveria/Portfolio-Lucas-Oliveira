@@ -1,7 +1,8 @@
 import { useState } from "react";
 import backgroundPhoto from "../../assets/otherImages/background-photo.svg";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
-import photo from "../../assets/otherImages/photo.svg";
+// import photo from "../../assets/otherImages/photo.svg";
+import photo from "../../assets/otherImages/cyberpunk-me.svg"
 import robotProto1 from "../../assets/robots/robot-cute-proto-1.svg";
 import screenTemplateAboutMe from "../../assets/screenTemplates/screen-template-about-me.svg";
 import ContainerLeft from '../../components/ContainerLeft';

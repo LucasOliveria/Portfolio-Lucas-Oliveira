@@ -18,6 +18,14 @@ function MainRoutes() {
       />
       <Route path="/contact" element={<Contact />}
       />
+      <Route path="*" element={
+        <>
+          <div style={{ backgroundColor: "#000C24", height: "100vh", width: "100vw", position: "absolute", top: "0", zIndex: "5", display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <h1>página não encontrada!</h1>
+          </div>
+        </>
+      }
+      />
     </Routes>
   )
 }

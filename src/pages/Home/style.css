@@ -31,9 +31,9 @@
 }
 
 .container-photo img[alt="photo"] {
-  width: 27.5rem;
+  width: 25rem;
   position: absolute;
-  top: -1.3rem;
+  top: -1.8rem;
 }
 
 .container-left h3 {

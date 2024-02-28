@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom"
 import currentFolderIcon from "../../assets/otherImages/currenty-folder.svg"
-import cyberpunkPersonIcon from "../../assets/otherImages/cyberpunk-person-header.svg"
+import cyberpunkPersonIcon from "../../assets/otherImages/cyberpunk-me.svg"
 import emailIcon from "../../assets/social/e-mail.svg"
 import githubIcon from "../../assets/social/github.svg"
 import linkedinIcon from "../../assets/social/linkedin.svg"
@@ -11,7 +11,12 @@ function Header() {
 
   return (
     <header>
-      <img src={cyberpunkPersonIcon} alt="cyberpunk-icon" />
+      <NavLink to={"/"}>
+        <div className="container-icon">
+          <img src={cyberpunkPersonIcon} alt="cyberpunk-icon" />
+          <h3>L. Olivr</h3>
+        </div>
+      </NavLink>
       <nav className='menu'>
         <ul className='menu-content'>
           <li>
