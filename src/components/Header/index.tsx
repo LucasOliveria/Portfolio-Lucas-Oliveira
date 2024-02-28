@@ -21,7 +21,7 @@ function Header() {
         <ul className='menu-content'>
           <li>
             <img
-              className={`${location.pathname === "/" ? "img-visible" : "img-hidden"}`}
+              className={`${location.pathname === "/home" ? "img-visible" : "img-hidden"}`}
               src={currentFolderIcon}
               alt="folder-icon"
             />
