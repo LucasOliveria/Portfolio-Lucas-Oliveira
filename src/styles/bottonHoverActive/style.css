@@ -1,13 +1,10 @@
-.contains-cv-button:hover button,
-.container-project-button:hover button,
-.send-button:hover button {
+.button-hover-active:hover button {
   background-image: url("../../assets/otherImages/button-template-pressed.svg");
   color: #e73f3d;
 }
 
-.contains-cv-button:active button,
-.contains-cv-button:active img[alt="button-template-blur"],
-.container-project-button:active button,
-.send-button:active button {
+.button-hover-active:active button,
+.button-hover-active:active img[alt="button-template-blur"],
+.button-hover-active:active button {
   transform: scale(0.9);
 }

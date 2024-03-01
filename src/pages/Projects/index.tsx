@@ -76,7 +76,7 @@ function Projects() {
                     <p><span>{title}</span></p>
                     <p>{text}</p>
                   </div>
-                  <div className="container-project-button">
+                  <div className="container-project-button button-hover-active">
                     <button onClick={() => window.open(link, "_blank")}>
                       <p>Link</p>
                     </button>

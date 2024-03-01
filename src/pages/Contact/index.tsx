@@ -1,11 +1,11 @@
+import buttonTemplate from "../../assets/otherImages/button-template.svg";
+import screenTemplateContact from "../../assets/screenTemplates/sreen-template-contact.svg";
+import emailIcon from "../../assets/social/e-mail.svg";
+import githubIcon from "../../assets/social/github.svg";
+import linkedinIcon from "../../assets/social/linkedin.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
 import './style.css';
-import screenTemplateContact from "../../assets/screenTemplates/sreen-template-contact.svg";
-import emailIcon from "../../assets/social/e-mail.svg"
-import githubIcon from "../../assets/social/github.svg"
-import linkedinIcon from "../../assets/social/linkedin.svg"
-import buttonTemplate from "../../assets/otherImages/button-template.svg";
 
 function Contact() {
   return (
@@ -17,12 +17,12 @@ function Contact() {
         </div>
       </ContainerLeft>
       <ContainerRight title='Contato'>
-        <div className='container-contact'>
+        <div className='container-contact into-container-right-generic'>
           <div className='contact-box'>
             <img src={screenTemplateContact} alt="screen-template-contact" />
             <div className='contact-text'>
               <h2>Entre em contato</h2>
-              <p>
+              <p className='p-13'>
                 Eu adoraria escutar sobre seu trabalho atual e como eu poderia ajudar. Atualmente estou procurando por um cargo e aberto para várias oportunidades.
               </p>
               <div className='container-social-media'>
@@ -43,7 +43,7 @@ function Contact() {
           </div>
           <div className='contact-box'>
             <img src={screenTemplateContact} alt="screen-template-contact" />
-            <div className='container-form'>
+            <div className='container-form-contact'>
               <form >
                 <div className='input-box'>
                   <label htmlFor="name">Name</label>
@@ -60,7 +60,7 @@ function Contact() {
                   <input
                     type="email"
                     name="email"
-                    value=""
+                    // value=""
                     id="email"
                     autoComplete="true"
                   />
@@ -70,14 +70,14 @@ function Contact() {
                   <textarea
                     name="message"
                     id="message"
-                    value=""
+                    // value=""
                     autoComplete="true"
                     cols={30}
-                    rows={10}
+                    rows={5}
                   >
                   </textarea>
                 </div>
-                <div className='send-button'>
+                <div className='container-contact-button button-hover-active'>
                   <button>
                     <p>Enviar</p>
                   </button>

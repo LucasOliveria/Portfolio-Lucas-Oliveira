@@ -13,7 +13,7 @@
 
 .container-contact {
   display: flex;
-  border: 1px solid red;
+  gap: 2.1rem;
 }
 
 .contact-box {
@@ -22,4 +22,82 @@
 
 .contact-text {
   position: absolute;
+  top: 2rem;
+  left: 5.2rem;
+  right: 3.3rem;
+}
+
+.contact-text h2 {
+  margin-bottom: 0.7rem;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--ciano-color);
+}
+
+.contact-text .p-13 {
+  margin-bottom: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.container-social-media {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.container-social-media p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ciano-color);
+}
+
+.container-form-contact {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 1.3rem;
+}
+
+.container-form-contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+
+.input-box label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ciano-color);
+}
+
+.input-box input {
+  border: none;
+  height: 40px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 314px;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.container-contact-button {
+  position: relative;
+  margin-top: 1rem;
 }

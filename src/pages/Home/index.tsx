@@ -28,7 +28,7 @@ function Home() {
           </div>
           <h3>Lucas Oliveira</h3>
           <p>Desenvolvedor FullStack</p>
-          <div className="contains-cv-button" >
+          <div className="contains-cv-button button-hover-active" >
             <button onClick={handleDownloadFile}>
               <p>
                 Baixar CV
