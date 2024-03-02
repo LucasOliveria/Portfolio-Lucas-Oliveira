@@ -84,7 +84,7 @@ img[alt="project-photo"] {
 .container-photo-description-link p {
   font-size: 1.6rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .container-photo-description-link p:nth-last-child(2) {
