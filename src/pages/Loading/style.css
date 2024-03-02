@@ -7,6 +7,7 @@
   align-items: center;
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 5;
 }
 
@@ -37,7 +38,7 @@ img[alt="pc-loading"] {
   font-size: 2rem;
   font-weight: 600;
   position: absolute;
-  left: 42%;
+  left: 44%;
 }
 
 .progress-bar {
