@@ -12,10 +12,10 @@ function Loading() {
     const timer = setInterval(() => {
       setPercentage((percentBar.current.offsetWidth * 100) / 241.29);
 
-      // if (percentBar.current.offsetWidth >= "241") {
-      //   clearInterval(timer)
-      //   navigate("/home")
-      // }
+      if (percentBar.current.offsetWidth >= "241") {
+        clearInterval(timer)
+        navigate("/home")
+      }
     }, 90);
 
   }
