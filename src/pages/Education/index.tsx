@@ -16,15 +16,14 @@ function Education() {
       <ContainerRight title='Formação'>
         <div className="education-page-content into-container-right-generic">
           {educations.map((info) => {
-            const { id, title, text, tech, ship } = info
+            const { id, title, text, ship } = info
             return (
               <div key={id} className="education-box">
                 <div >
                   <img src={screenTemplateEducation} alt="screen-template-education" />
                   <div className="education-text">
-                    <p><span>{title}</span></p>
+                    <h2><span>{title}</span></h2>
                     <p>{text}</p>
-                    <p>{tech}</p>
                   </div>
                 </div>
                 <img src={ship} alt="cyberpunk-ship" />

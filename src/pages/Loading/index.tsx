@@ -10,9 +10,9 @@ function Loading() {
 
   function runPercentageAndredirector() {
     const timer = setInterval(() => {
-      setPercentage((percentBar.current.offsetWidth * 100) / 267.28);
+      setPercentage((percentBar.current.offsetWidth * 100) / 241.29);
 
-      if (percentBar.current.offsetWidth >= "267") {
+      if (percentBar.current.offsetWidth >= "241") {
         clearInterval(timer)
         navigate("/home")
       }

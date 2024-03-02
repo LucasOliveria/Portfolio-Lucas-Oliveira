@@ -3,7 +3,7 @@ import arrowLeft from "../../assets/otherImages/arrow-left.svg";
 import arrowRight from "../../assets/otherImages/arrow-right.svg";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import robotProto3 from "../../assets/robots/robot-cute-proto-3.svg";
-import screenTemplateGeneric from "../../assets/screenTemplates/screen-template-generic.svg";
+import screenTemplateGeneric from "../../assets/screenTemplates/screen-template-project.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
 import { projects } from '../../database/ProjectDb';

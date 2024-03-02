@@ -1,5 +1,5 @@
 .container-gif-skills {
-  height: 45rem;
+  height: 55rem;
   background-image: url("../../assets/gifs/gamer-room-pixel.gif");
 }
 
@@ -8,7 +8,7 @@
 }
 
 .background-gradient-down-skills {
-  height: 12rem;
+  height: 16rem;
 }
 
 .skills-page-container {
@@ -52,9 +52,8 @@ img[alt="skill-symbol"] {
   font-weight: 600;
   line-height: 1.2;
   text-shadow:
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 150px #fff;
+    0 0 100px #fff,
+    0 0 20px #fff;
 }
 
 img[alt="robot-cute-proto-2"] {

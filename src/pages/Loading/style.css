@@ -17,23 +17,27 @@
   position: relative;
 }
 
+img[alt="pc-loading"] {
+  width: 26rem;
+}
+
 .container-loading-bar {
   display: flex;
   align-items: center;
-  width: 271px;
+  width: 245px;
   height: 33px;
   border-radius: 5px;
   border: 2px solid #ffffff;
   background-color: unset;
   position: absolute;
-  bottom: 2rem;
+  bottom: 0rem;
 }
 
 .container-loading-bar p {
   font-size: 2rem;
   font-weight: 600;
   position: absolute;
-  left: 45%;
+  left: 42%;
 }
 
 .progress-bar {
@@ -45,43 +49,4 @@
   border-radius: 5px 0px 0px 5px;
   background-color: #e73f3d;
   transition: all 0.5s;
-}
-
-.content-not-found-box {
-  display: flex;
-  justify-content: center;
-  width: 81rem;
-  position: relative;
-}
-
-img[alt="robot-cute-proto-5"],
-img[alt="robot-cute-proto-4"] {
-  position: absolute;
-  bottom: -3rem;
-}
-
-img[alt="robot-cute-proto-5"] {
-  left: -5rem;
-}
-
-img[alt="robot-cute-proto-4"] {
-  right: -3rem;
-}
-
-.not-found-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 73rem;
-  height: 34rem;
-  background-image: url("../../assets/screenTemplates/screen-template-about-me.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.not-found-box h1 {
-  font-family: 'Press Start 2P';
-  font-size: 3.6rem;
-  font-weight: 400;
 }

@@ -13,13 +13,13 @@
 
 .education-box {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .education-text {
   top: 1.32rem;
-  left: 6.58rem;
-  right: 5.87rem;
+  left: 3rem;
+  right: 6rem;
   z-index: 1;
 }
 
@@ -28,18 +28,20 @@ img[alt="cyberpunk-ship"] {
   position: absolute;
 }
 
+.education-text h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--ciano-color);
+}
+
 .education-text p {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 0.9rem;
-}
-
-.education-text p span {
-  color: var(--ciano-color);
+  margin-top: 0.6rem;
 }
 
 img[alt="cyberpunk-ship"] {
-  bottom: -6rem;
+  bottom: -7.2rem;
   right: 1rem;
 }

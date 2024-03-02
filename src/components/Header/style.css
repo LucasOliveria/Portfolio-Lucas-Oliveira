@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   max-width: 100vw;
   height: 6rem;
-  background-color: #000c24c4;
+  background-color: #000c24dc;
   backdrop-filter: blur(0.4rem);
   position: sticky;
   z-index: 3;

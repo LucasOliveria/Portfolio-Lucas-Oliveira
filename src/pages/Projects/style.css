@@ -46,10 +46,10 @@ img[alt="arrow-right"]:hover.arrow-hidden:hover {
 }
 
 .project-carousel {
-  width: 75%;
+  width: 82%;
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 1.5rem;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
@@ -70,8 +70,8 @@ img[alt="arrow-right"]:hover.arrow-hidden:hover {
   flex-direction: column;
   position: absolute;
   top: 1rem;
-  left: 1.9rem;
-  right: 0.5rem;
+  left: 2.5rem;
+  right: 1.2rem;
 }
 
 img[alt="project-photo"] {
@@ -88,6 +88,8 @@ img[alt="project-photo"] {
 }
 
 .container-photo-description-link p:nth-last-child(2) {
+  font-size: 1.8rem;
+  font-weight: 600;
   margin-bottom: 0.7rem;
 }
 
@@ -97,11 +99,12 @@ img[alt="project-photo"] {
 
 .container-project-button {
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
 }
 
 img[alt="robot-cute-proto-3"] {
   position: absolute;
-  bottom: -5rem;
+  z-index: 2;
+  bottom: -7rem;
   left: -4rem;
 }
