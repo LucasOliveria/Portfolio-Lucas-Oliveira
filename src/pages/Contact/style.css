@@ -97,6 +97,10 @@
   font-weight: 700;
 }
 
+.input-box textarea {
+  padding-top: 1rem;
+}
+
 .container-contact-button {
   position: relative;
   margin-top: 1rem;

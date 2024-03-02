@@ -1,3 +1,4 @@
+import { ChangeEvent, FormEvent, useState } from "react";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import screenTemplateContact from "../../assets/screenTemplates/sreen-template-contact.svg";
 import emailIcon from "../../assets/social/e-mail.svg";
@@ -7,7 +8,35 @@ import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
 import './style.css';
 
+type Tform = {
+  name: string
+  email: string
+  message: string
+}
+
 function Contact() {
+  const [form, setForm] = useState<Tform>({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  function handleChangeForm(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+    setForm({ ...form, [event.target.name]: event.target.value });
+  }
+
+  function handleSubmit(event: FormEvent) {
+    event.preventDefault();
+    const { name, email, message } = form;
+
+    if (!name || !email || !message) {
+      return console.log("Preencha todos os campos!");
+
+    }
+
+    console.log(form);
+  }
+
   return (
     <main className='main-generic'>
       <ContainerLeft>
@@ -44,14 +73,15 @@ function Contact() {
           <div className='contact-box'>
             <img src={screenTemplateContact} alt="screen-template-contact" />
             <div className='container-form-contact'>
-              <form >
+              <form onSubmit={handleSubmit}>
                 <div className='input-box'>
                   <label htmlFor="name">Name</label>
                   <input
                     type="text"
                     name="name"
-                    value=""
+                    value={form?.name}
                     id="name"
+                    onChange={handleChangeForm}
                     autoComplete="true"
                   />
                 </div>
@@ -60,8 +90,9 @@ function Contact() {
                   <input
                     type="email"
                     name="email"
-                    // value=""
+                    value={form?.email}
                     id="email"
+                    onChange={handleChangeForm}
                     autoComplete="true"
                   />
                 </div>
@@ -70,10 +101,11 @@ function Contact() {
                   <textarea
                     name="message"
                     id="message"
-                    // value=""
+                    value={form?.message}
+                    onChange={handleChangeForm}
                     autoComplete="true"
                     cols={30}
-                    rows={5}
+                    rows={4}
                   >
                   </textarea>
                 </div>
