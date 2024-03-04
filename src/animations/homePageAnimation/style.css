@@ -407,6 +407,6 @@
 }
 
 .shake-vertical-robot {
-  -webkit-animation: shake-vertical-robot 9s ease-in-out infinite both;
-  animation: shake-vertical-robot 9s ease-in-out infinite both;
+  -webkit-animation: shake-vertical-robot 8s ease-in-out infinite both;
+  animation: shake-vertical-robot 8s ease-in-out infinite both;
 }
