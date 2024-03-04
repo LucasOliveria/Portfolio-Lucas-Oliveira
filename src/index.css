@@ -1,5 +1,7 @@
 @import url("styles/bottonHoverActive/style.css");
-@import url("./animations/style.css");
+@import url("./animations/loadingPageAnimation/style.css");
+@import url("./animations/containerRightTitleAnimation/style.css");
+@import url("./animations/homePageAnimation/style.css");
 
 html {
   font-size: 62.5%;
@@ -66,12 +68,15 @@ img[alt="robot-cute-proto-1"] {
 
 .into-container-right-generic {
   width: 73rem;
-  margin: 0 1rem 8rem 0;
+  height: 35.8rem;
+  margin: 0 1rem 7.7rem 0;
 }
 
-.container-project-button {
-  position: absolute;
-  bottom: 1rem;
+.container-gif-contact,
+.container-gif-education,
+.container-gif-skills,
+.container-gif-projects {
+  height: 55rem;
 }
 
 .container-project-button,

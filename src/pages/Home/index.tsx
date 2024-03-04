@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import backgroundPhoto from "../../assets/otherImages/background-photo.svg";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import photo from "../../assets/otherImages/cyberpunk-me.svg";
@@ -6,9 +6,11 @@ import robotProto1 from "../../assets/robots/robot-cute-proto-1.svg";
 import screenTemplateAboutMe from "../../assets/screenTemplates/screen-template-about-me.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
+import useStatesContext from "../../hooks/useStatesContext";
 import './style.css';
 
 function Home() {
+  const { exit, setExit } = useStatesContext()
   const [download, setDownload] = useState("");
 
   async function handleDownloadFile() {
@@ -16,31 +18,36 @@ function Home() {
 
     setDownload(`https://drive.google.com/uc?export=download&id=153RxDbwHyYKcPfu12_dow-5PqHJDJtVj&t=${timestamp}`);
   }
+  useEffect(() => {
+    setExit("")
+  }, [])
 
   return (
     <div className="container-home">
       <main className='main-generic'>
         <ContainerLeft>
-          <h1>Olá, seja <span>Bem-Vindo</span></h1>
-          <div className="container-photo">
-            <img src={backgroundPhoto} alt="background-photo" />
-            <img src={photo} alt="photo" />
-          </div>
-          <h3>Lucas Oliveira</h3>
-          <p>Desenvolvedor FullStack</p>
-          <div className="contains-cv-button button-hover-active" >
-            <button onClick={handleDownloadFile}>
-              <p>
-                Baixar CV
-              </p>
-            </button>
-            <img src={buttonTemplate} alt="button-template-blur" />
-            {download && <iframe src={download} style={{ display: "none" }}></iframe>}
+          <div className={`container-welcome ${exit !== "home" ? "fade-in-left" : "fade-out-left"}`}>
+            <h1>Olá, seja <span>Bem-Vindo</span></h1>
+            <div className="container-photo">
+              <img src={backgroundPhoto} alt="background-photo" />
+              <img src={photo} alt="photo" />
+            </div>
+            <h3>Lucas Oliveira</h3>
+            <p>Desenvolvedor FullStack</p>
+            <div className="contains-cv-button button-hover-active" >
+              <button onClick={handleDownloadFile}>
+                <p>
+                  Baixar CV
+                </p>
+              </button>
+              <img src={buttonTemplate} alt="button-template-blur" />
+              {download && <iframe src={download} style={{ display: "none" }}></iframe>}
+            </div>
           </div>
         </ContainerLeft>
         <ContainerRight title='Sobre mim'>
-          <div className="home-page-content into-container-right-generic">
-            <div >
+          <div className={`home-page-content into-container-right-generic ${exit !== "home" ? "fade-in-right" : "flicker-out-2"}`}>
+            <div>
               <img src={screenTemplateAboutMe} alt="screen-template-about-me" />
               <div className="home-text">
                 <p>
@@ -54,7 +61,7 @@ function Home() {
                 </p>
               </div>
             </div>
-            <img src={robotProto1} alt="robot-cute-proto-1" />
+            <img src={robotProto1} alt="robot-cute-proto-1" className="shake-vertical-robot" />
           </div>
         </ContainerRight>
       </main>

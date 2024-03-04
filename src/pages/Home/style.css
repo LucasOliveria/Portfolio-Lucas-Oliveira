@@ -2,6 +2,12 @@
   max-width: 100vw;
 }
 
+.container-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container-left h1 {
   max-width: 334px;
   margin-bottom: 1.5rem;
@@ -123,6 +129,7 @@ img[alt="robot-cute-proto-1"] {
 }
 
 .background-gif-home {
+  display: none;
   width: 800px;
   background-image: url("../../assets/gifs/landscape-pixel-city.gif");
   background-repeat: no-repeat;

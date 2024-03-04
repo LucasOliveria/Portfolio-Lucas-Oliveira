@@ -1,0 +1,256 @@
+@-webkit-keyframes text-flicker-in-glow {
+  0.7% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.7;
+  }
+
+  10.1% {
+    opacity: 0.7;
+  }
+
+  10.2% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  20.1% {
+    opacity: 1;
+  }
+
+  20.7% {
+    opacity: 0.7;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  30.1% {
+    opacity: 1;
+  }
+
+  30.5% {
+    opacity: 1;
+  }
+
+  30.7% {
+    opacity: 0.7;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  45.1% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  55.1% {
+    opacity: 0.7;
+  }
+
+  57% {
+    opacity: 1;
+  }
+
+  57.1% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  60.1% {
+    opacity: 0.7;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  65.1% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  75.1% {
+    opacity: 0.7;
+  }
+
+  77% {
+    opacity: 1;
+  }
+
+  77.1% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  85.1% {
+    opacity: 0.7;
+  }
+
+  86% {
+    opacity: 1;
+  }
+
+  86.1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker-in-glow {
+  0.7% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.7;
+  }
+
+  10.1% {
+    opacity: 0.7;
+  }
+
+  10.2% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  20.1% {
+    opacity: 1;
+  }
+
+  20.7% {
+    opacity: 0.7;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  30.1% {
+    opacity: 1;
+  }
+
+  30.5% {
+    opacity: 1;
+  }
+
+  30.7% {
+    opacity: 0.7;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  45.1% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  55% {
+    opacity: 1;
+  }
+
+  55.1% {
+    opacity: 0.7;
+  }
+
+  57% {
+    opacity: 1;
+  }
+
+  57.1% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  60.1% {
+    opacity: 0.7;
+  }
+
+  65% {
+    opacity: 1;
+  }
+
+  65.1% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  75.1% {
+    opacity: 0.7;
+  }
+
+  77% {
+    opacity: 1;
+  }
+
+  77.1% {
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 1;
+  }
+
+  85.1% {
+    opacity: 0.7;
+  }
+
+  86% {
+    opacity: 1;
+  }
+
+  86.1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-flicker-in-glow {
+  -webkit-animation: text-flicker-in-glow 5s linear infinite both;
+  animation: text-flicker-in-glow 5s linear infinite both;
+}

@@ -1,25 +1,25 @@
 import { Dispatch, ReactNode, SetStateAction, createContext, useState } from "react";
 
 interface IContextProps {
-  test: string
-  setTest: Dispatch<SetStateAction<string>>
   arrow: string
   setArrow: Dispatch<SetStateAction<string>>
+  exit: string
+  setExit: Dispatch<SetStateAction<string>>
 }
 
 export const context = createContext({} as IContextProps);
 
 function Context({ children }: { children: ReactNode }) {
-  const [test, setTest] = useState("Teste");
   const [arrow, setArrow] = useState("none");
+  const [exit, setExit] = useState("");
 
   return (
     <context.Provider value={
       {
-        test,
-        setTest,
         arrow,
-        setArrow
+        setArrow,
+        exit,
+        setExit
       }}
     >
       {children}

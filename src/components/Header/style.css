@@ -68,17 +68,13 @@ header a {
 .img-visible,
 .menu-content li p,
 .social-menu img {
-  transition: all 0.3s;
+  transition: all 1s;
   cursor: pointer;
 }
 
 .img-hidden {
   visibility: hidden;
   opacity: 0;
-}
-
-.menu-content li a.active p {
-  color: #02f9f9;
 }
 
 .menu-content li p {
@@ -93,6 +89,10 @@ header a {
     4px 4px 10px var(--ciano-color),
     4px 4px 21px var(--ciano-color),
     4px 4px 150px var(--ciano-color);
+}
+
+.menu-content li p.p-active {
+  color: var(--ciano-color);
 }
 
 .social-menu {

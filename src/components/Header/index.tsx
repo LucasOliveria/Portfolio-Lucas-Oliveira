@@ -1,13 +1,31 @@
-import { NavLink, useLocation } from "react-router-dom"
+import { NavLink, useLocation, useNavigate } from "react-router-dom"
 import currentFolderIcon from "../../assets/otherImages/currenty-folder.svg"
 import cyberpunkPersonIcon from "../../assets/otherImages/cyberpunk-me.svg"
 import emailIcon from "../../assets/social/e-mail.svg"
 import githubIcon from "../../assets/social/github.svg"
 import linkedinIcon from "../../assets/social/linkedin.svg"
 import './style.css'
+import useStatesContext from "../../hooks/useStatesContext"
 
 function Header() {
   const location = useLocation();
+  const navigate = useNavigate();
+  const { setExit } = useStatesContext();
+
+  function handleNavigatAnimate(page: string) {
+    if (page !== location.pathname) {
+      if (location.pathname === "/home") {
+        setExit("home")
+
+        setTimeout(() => {
+          navigate(page);
+        }, 600);
+        return
+      }
+
+      navigate(page);
+    }
+  }
 
   return (
     <header>
@@ -25,9 +43,12 @@ function Header() {
               src={currentFolderIcon}
               alt="folder-icon"
             />
-            <NavLink to={"/home"}>
-              <p>Sobre mim</p>
-            </NavLink>
+            <p
+              onClick={() => handleNavigatAnimate("/home")}
+              className={`${location.pathname === "/home" && "p-active"}`}
+            >
+              Sobre mim
+            </p>
           </li>
           <li>
             <img
@@ -35,9 +56,12 @@ function Header() {
               src={currentFolderIcon}
               alt="folder-icon"
             />
-            <NavLink to={"/education"}>
-              <p>Formação</p>
-            </NavLink>
+            <p
+              onClick={() => handleNavigatAnimate("/education")}
+              className={`${location.pathname === "/education" && "p-active"}`}
+            >
+              Formação
+            </p>
           </li>
           <li>
             <img
@@ -45,9 +69,12 @@ function Header() {
               src={currentFolderIcon}
               alt="folder-icon"
             />
-            <NavLink to={"/skills"}>
-              <p>Habilidades</p>
-            </NavLink>
+            <p
+              onClick={() => handleNavigatAnimate("/skills")}
+              className={`${location.pathname === "/skills" && "p-active"}`}
+            >
+              Habilidades
+            </p>
           </li>
           <li>
             <img
@@ -55,9 +82,12 @@ function Header() {
               src={currentFolderIcon}
               alt="folder-icon"
             />
-            <NavLink to={"/projects"}>
-              <p>Projetos</p>
-            </NavLink>
+            <p
+              onClick={() => handleNavigatAnimate("/projects")}
+              className={`${location.pathname === "/projects" && "p-active"}`}
+            >
+              Projetos
+            </p>
           </li>
           <li>
             <img
@@ -65,9 +95,12 @@ function Header() {
               src={currentFolderIcon}
               alt="folder-icon"
             />
-            <NavLink to={"/contact"}>
-              <p>Contato</p>
-            </NavLink>
+            <p
+              onClick={() => handleNavigatAnimate("/contact")}
+              className={`${location.pathname === "/contact" && "p-active"}`}
+            >
+              Contato
+            </p>
           </li>
         </ul>
         <div className='social-menu'>

@@ -4,8 +4,8 @@
 }
 
 .main-portfolio {
-  height: calc(100vh - 6rem);
-  padding-top: 6rem;
+  height: calc(100vh - 4.5rem);
+  padding-top: 4.5rem;
   scroll-behavior: smooth;
   overflow-y: auto;
   background-color: var(--background-color);

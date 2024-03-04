@@ -6,11 +6,11 @@ import Context from './context/context';
 import Portfolio from './pages/PortFolio';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <Context>
-    <BrowserRouter>
+  <BrowserRouter>
+    <Context>
       <Portfolio>
         <MainRoutes />
       </Portfolio>
-    </BrowserRouter>
-  </Context>
+    </Context>
+  </BrowserRouter>
 )

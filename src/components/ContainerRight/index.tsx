@@ -9,7 +9,7 @@ function ContainerRight({ children, title }: { children: ReactNode, title: strin
       <div className="box-right">
         <div className="page-content-container">
           <img src={techLineUp} alt="tech-line-up" />
-          <h3>{title}</h3>
+          <h3 className="text-flicker-in-glow">{title}</h3>
           {children}
           <img src={techLineDown} alt="tech-line-down" />
         </div>
