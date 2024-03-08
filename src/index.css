@@ -28,6 +28,7 @@ body {
   font-family: "Rajdhani", sans-serif;
   font-style: normal;
   overflow-y: hidden;
+  background-color: #000000;
   color: #f0e0e0;
 }
 
@@ -127,15 +128,8 @@ img[alt="robot-cute-proto-3"] {
   }
 }
 
-/* .background-gradient-up-education,
-.background-gradient-down-education,
-.background-gradient-up-skills,
-.background-gradient-down-skill {
-  width: 100%;
-} */
-
-/* @media (min-width: 1900px) and (max-width:2500px) {
-  .main-generic {
+@media (min-width: 1900px) and (max-width:2500px) {
+  body {
     padding: 0 25rem;
   }
-} */
+}
