@@ -5,7 +5,7 @@
   width: 53rem;
 }
 
-@media (max-width: 1288px) {
+@media (max-width: 1300px) {
   .container-left {
     width: 100vw;
     margin-bottom: 5rem;

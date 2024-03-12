@@ -254,3 +254,60 @@
   -webkit-animation: text-flicker-in-glow 5s linear infinite both;
   animation: text-flicker-in-glow 5s linear infinite both;
 }
+
+@-webkit-keyframes shake-vertical-robot {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(4px);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+}
+
+@keyframes shake-vertical-robot {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(4px);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+}
+
+.shake-vertical-robot {
+  -webkit-animation: shake-vertical-robot 7s ease-in-out infinite both;
+  animation: shake-vertical-robot 7s ease-in-out infinite both;
+}

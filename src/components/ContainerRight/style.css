@@ -46,7 +46,7 @@ img[alt="tech-line-down"] {
   }
 }
 
-@media (max-width: 1288px) {
+@media (max-width: 1300px) {
   .container-right {
     width: 100vw;
     margin-bottom: 5rem;

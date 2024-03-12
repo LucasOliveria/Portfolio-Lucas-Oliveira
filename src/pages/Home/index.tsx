@@ -18,9 +18,10 @@ function Home() {
 
     setDownload(`https://drive.google.com/uc?export=download&id=153RxDbwHyYKcPfu12_dow-5PqHJDJtVj&t=${timestamp}`);
   }
+
   useEffect(() => {
     setExit("")
-  }, [])
+  }, []);
 
   return (
     <div className="container-home">
