@@ -9,3 +9,12 @@
   scroll-behavior: smooth;
   overflow-y: auto;
 }
+
+@media (min-width: 1900px) and (max-width:2200px) {
+  .main-portfolio {
+    height: calc(100vh - 4.5rem);
+    padding-top: 20rem;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+  }
+}

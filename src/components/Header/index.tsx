@@ -4,8 +4,8 @@ import cyberpunkPersonIcon from "../../assets/otherImages/cyberpunk-me.svg"
 import emailIcon from "../../assets/social/e-mail.svg"
 import githubIcon from "../../assets/social/github.svg"
 import linkedinIcon from "../../assets/social/linkedin.svg"
-import './style.css'
 import useStatesContext from "../../hooks/useStatesContext"
+import './style.css'
 
 function Header() {
   const location = useLocation();
@@ -15,48 +15,48 @@ function Header() {
   function handleNavigatAnimate(page: string) {
     if (page !== location.pathname) {
       if (location.pathname === "/home") {
-        setExit("home")
+        setExit("home");
 
         setTimeout(() => {
           navigate(page);
         }, 600);
-        return
+        return;
       }
 
       if (location.pathname === "/education") {
-        setExit("education")
+        setExit("education");
 
         setTimeout(() => {
           navigate(page);
         }, 600);
-        return
+        return;
       }
 
       if (location.pathname === "/skills") {
-        setExit("skills")
+        setExit("skills");
 
         setTimeout(() => {
           navigate(page);
         }, 600);
-        return
+        return;
       }
 
       if (location.pathname === "/projects") {
-        setExit("projects")
+        setExit("projects");
 
         setTimeout(() => {
           navigate(page);
         }, 600);
-        return
+        return;
       }
 
       if (location.pathname === "/contact") {
-        setExit("contact")
+        setExit("contact");
 
         setTimeout(() => {
           navigate(page);
         }, 600);
-        return
+        return;
       }
     }
   }
