@@ -12,7 +12,7 @@ import './style.css';
 
 function Projects() {
   const carouselRef = useRef<any>(null);
-  const { arrow, setArrow } = useStatesContext();
+  const { arrow, setArrow, exit, setExit } = useStatesContext();
 
   function handleCarousel(direction: string) {
     if (direction === "left" && arrow === "left" || direction === "right" && arrow === "right") {
@@ -43,18 +43,20 @@ function Projects() {
     if (carouselRef.current.scrollLeft += carouselRef.current.offsetWidth !== carouselRef.current.scrollWidth) {
       setArrow("left");
     }
+
+    setExit("");
   }, []);
 
   return (
     <main className='main-generic'>
       <ContainerLeft>
-        <div className="container-gif-projects container-gif-generic">
+        <div className={`container-gif-projects container-gif-generic ${exit !== "projects" ? "flicker-in-2" : "flicker-out-2"}`}>
           <div className='background-gradient-up-projects up-gradient'></div>
           <div className='background-gradient-down-projects down-gradient'></div>
         </div>
       </ContainerLeft>
       <ContainerRight title='Projetos'>
-        <div className="projects-page-container into-container-right-generic">
+        <div className={`projects-page-container into-container-right-generic ${exit !== "projects" ? "flicker-in-2" : "flicker-out-2"}`}>
           <img
             onClick={() => handleCarousel("left")}
             src={arrowLeft} alt="arrow-left"
@@ -91,7 +93,7 @@ function Projects() {
             src={arrowRight} alt="arrow-right"
             className={`${arrow === "right" ? "arrow-hidden" : arrow === "Midway" || arrow === "left" ? "arrow-visible" : "arrow-hidden"}`}
           />
-          <img src={robotProto3} alt="robot-cute-proto-3" />
+          <img src={robotProto3} alt="robot-cute-proto-3" className='shake-vertical-robot' />
         </div>
       </ContainerRight>
     </main >

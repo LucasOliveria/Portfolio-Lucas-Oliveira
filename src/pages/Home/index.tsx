@@ -10,7 +10,7 @@ import useStatesContext from "../../hooks/useStatesContext";
 import './style.css';
 
 function Home() {
-  const { exit, setExit } = useStatesContext()
+  const { exit, setExit } = useStatesContext();
   const [download, setDownload] = useState("");
 
   async function handleDownloadFile() {
@@ -20,7 +20,7 @@ function Home() {
   }
 
   useEffect(() => {
-    setExit("")
+    setExit("");
   }, []);
 
   return (

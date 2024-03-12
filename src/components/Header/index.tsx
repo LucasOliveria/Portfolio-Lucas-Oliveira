@@ -23,7 +23,41 @@ function Header() {
         return
       }
 
-      navigate(page);
+      if (location.pathname === "/education") {
+        setExit("education")
+
+        setTimeout(() => {
+          navigate(page);
+        }, 600);
+        return
+      }
+
+      if (location.pathname === "/skills") {
+        setExit("skills")
+
+        setTimeout(() => {
+          navigate(page);
+        }, 600);
+        return
+      }
+
+      if (location.pathname === "/projects") {
+        setExit("projects")
+
+        setTimeout(() => {
+          navigate(page);
+        }, 600);
+        return
+      }
+
+      if (location.pathname === "/contact") {
+        setExit("contact")
+
+        setTimeout(() => {
+          navigate(page);
+        }, 600);
+        return
+      }
     }
   }
 

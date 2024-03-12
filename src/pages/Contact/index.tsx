@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import screenTemplateContact from "../../assets/screenTemplates/sreen-template-contact.svg";
 import emailIcon from "../../assets/social/e-mail.svg";
@@ -7,6 +7,7 @@ import linkedinIcon from "../../assets/social/linkedin.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
 import './style.css';
+import useStatesContext from "../../hooks/useStatesContext";
 
 type Tform = {
   name: string
@@ -20,6 +21,7 @@ function Contact() {
     email: "",
     message: ""
   });
+  const { exit, setExit } = useStatesContext();
 
   function handleChangeForm(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm({ ...form, [event.target.name]: event.target.value });
@@ -31,22 +33,25 @@ function Contact() {
 
     if (!name || !email || !message) {
       return console.log("Preencha todos os campos!");
-
     }
 
     console.log(form);
   }
 
+  useEffect(() => {
+    setExit("");
+  }, []);
+
   return (
     <main className='main-generic'>
       <ContainerLeft>
-        <div className="container-gif-contact container-gif-generic">
+        <div className={`container-gif-contact container-gif-generic ${exit !== "contact" ? "flicker-in-2" : "flicker-out-2"}`}>
           <div className='background-gradient-up-contact up-gradient'></div>
           <div className='background-gradient-down-contact down-gradient'></div>
         </div>
       </ContainerLeft>
       <ContainerRight title='Contato'>
-        <div className='container-contact into-container-right-generic'>
+        <div className={`container-contact into-container-right-generic ${exit !== "contact" ? "flicker-in-2" : "flicker-out-2"}`}>
           <div className='contact-box'>
             <img src={screenTemplateContact} alt="screen-template-contact" />
             <div className='contact-text'>

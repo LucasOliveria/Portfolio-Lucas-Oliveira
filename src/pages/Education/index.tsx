@@ -1,20 +1,28 @@
+import { useEffect } from "react";
 import screenTemplateEducation from "../../assets/screenTemplates/screen-template-education.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
 import { educations } from '../../database/educationDb';
+import useStatesContext from "../../hooks/useStatesContext";
 import './style.css';
 
 function Education() {
+  const { setExit, exit } = useStatesContext();
+
+  useEffect(() => {
+    setExit("")
+  }, []);
+
   return (
     <main className='main-generic'>
       <ContainerLeft>
-        <div className="container-gif-education container-gif-generic">
+        <div className={`container-gif-education container-gif-generic ${exit !== "education" ? "flicker-in-2" : "flicker-out-2"}`}>
           <div className='background-gradient-up-education up-gradient'></div>
           <div className='background-gradient-down-education down-gradient'></div>
         </div>
       </ContainerLeft>
       <ContainerRight title='Formação'>
-        <div className="education-page-content into-container-right-generic">
+        <div className={`ducation-page-content into-container-right-generic ${exit !== "education" ? "flicker-in-2" : "flicker-out-2"}`}>
           {educations.map((info) => {
             const { id, title, text, ship } = info
             return (
@@ -26,7 +34,7 @@ function Education() {
                     <p>{text}</p>
                   </div>
                 </div>
-                <img src={ship} alt="cyberpunk-ship" />
+                <img src={ship} alt="cyberpunk-ship" className="shake-vertical-robot" />
               </div>
             )
           })}
