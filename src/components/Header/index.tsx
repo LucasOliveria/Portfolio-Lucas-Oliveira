@@ -58,6 +58,8 @@ function Header() {
         }, 600);
         return;
       }
+
+      navigate(page);
     }
   }
 
