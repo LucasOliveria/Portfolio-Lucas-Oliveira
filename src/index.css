@@ -1,8 +1,8 @@
 @import url("styles/bottonHoverActive/style.css");
+@import url("./animations/loadingPageAnimation/style.css");
 @import url("./animations/entraceAnimations/style.css");
 @import url("./animations/exitAnimations/style.css");
 @import url("./animations/continuousAnimations/style.css");
-@import url("./animations/loadingPageAnimation/style.css");
 
 html {
   font-size: 62.5%;
