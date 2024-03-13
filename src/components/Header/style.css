@@ -44,7 +44,16 @@ header a {
   display: flex;
 }
 
-.menu ul {
+img[alt="open button"],
+img[alt="close button"] {
+  display: none;
+}
+
+.container-nav-menus {
+  display: flex;
+}
+
+.container-nav-menus ul {
   display: flex;
   list-style: none;
   gap: 1.2rem;
@@ -112,7 +121,80 @@ header a {
   transform: scale(1.15);
 }
 
-@media (max-width: 1280px) {
+
+
+
+@media (max-width:932px) {
+  header {
+    min-height: 6rem;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .container-icon h3 {
+    display: none;
+  }
+
+  .menu-open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #000c24 50%, #000c2473 100%);
+  }
+
+  img[alt="open button"],
+  img[alt="close button"] {
+    display: block;
+    width: 3.7rem;
+    height: 3.7rem;
+    margin-right: 2.2rem;
+  }
+
+  img[alt="close button"] {
+    margin-top: 1rem;
+  }
+
+  .menu .container-nav-menus {
+    display: none;
+  }
+
+  .menu-open .container-nav-menus {
+    display: flex;
+  }
+
+  .container-nav-menus {
+    width: 100%;
+    align-self: flex-start;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    background: linear-gradient(to bottom, #000c24 90%, #000c2473 100%);
+  }
+
+  .menu-content {
+    flex-direction: column;
+    margin: 0 0 3.8rem 2.7rem;
+  }
+
+  .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+  }
+}
+
+
+
+
+@media (min-width:933px) and (max-width: 1280px) {
   header {
     flex-direction: column-reverse;
     align-items: center;
