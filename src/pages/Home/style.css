@@ -106,6 +106,10 @@ img[alt="button-template-blur"] {
   position: relative;
 }
 
+img[alt="screen-template-about-me-mobile"] {
+  display: none;
+}
+
 .home-page-content .home-text {
   position: absolute;
   top: 2.5rem;
@@ -122,27 +126,23 @@ img[alt="robot-cute-proto-1"] {
   bottom: -6rem;
 }
 
-.container-gif-home {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
 
-.background-gif-home {
-  display: none;
-  width: 800px;
-  background-image: url("../../assets/gifs/landscape-pixel-city.gif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
-.background-gif-home,
-.background-home-gradient {
-  height: 35rem;
-}
+@media (max-width:931px) {
+  img[alt="screen-template-about-me"] {
+    display: none;
+  }
 
-.background-home-gradient {
-  width: 100%;
-  background: linear-gradient(90deg, var(--background-color) 15%, #17141400 44%);
+  img[alt="screen-template-about-me-mobile"] {
+    display: block;
+  }
+
+  .home-page-content .home-text {
+    width: 27.8rem;
+    height: 49.9rem;
+    top: 4.3rem;
+    left: 2.1rem;
+    right: 1.9rem;
+  }
+
 }

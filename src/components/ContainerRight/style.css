@@ -20,7 +20,7 @@ img[alt="tech-line-down"] {
 
 img[alt="tech-line-up"] {
   top: 0;
-  right: 0;
+  right: 0rem;
 }
 
 img[alt="tech-line-down"] {
@@ -38,6 +38,18 @@ img[alt="tech-line-down"] {
     4px 4px 21px var(--light-green),
     4px 4px 150px var(--light-green);
   color: var(--light-green);
+}
+
+@media (max-width:931px) {
+
+  img[alt="tech-line-up"],
+  img[alt="tech-line-down"] {
+    width: 30rem;
+  }
+
+  .page-content-container h3 {
+    margin: 8rem 0 2.6rem 0;
+  }
 }
 
 @media (min-width: 1900px) and (max-width:2600px) {

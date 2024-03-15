@@ -3,6 +3,7 @@ import backgroundPhoto from "../../assets/otherImages/background-photo.svg";
 import buttonTemplate from "../../assets/otherImages/button-template.svg";
 import photo from "../../assets/otherImages/cyberpunk-me.svg";
 import robotProto1 from "../../assets/robots/robot-cute-proto-1.svg";
+import screenTemplateAboutMeMobile from "../../assets/screenTemplates/screen-template-about-me-mobile.svg";
 import screenTemplateAboutMe from "../../assets/screenTemplates/screen-template-about-me.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
@@ -48,8 +49,9 @@ function Home() {
         </ContainerLeft>
         <ContainerRight title='Sobre mim'>
           <div className={`home-page-content into-container-right-generic ${exit !== "home" ? "fade-in-right" : "flicker-out-2"}`}>
-            <div>
+            <div >
               <img src={screenTemplateAboutMe} alt="screen-template-about-me" />
+              <img src={screenTemplateAboutMeMobile} alt="screen-template-about-me-mobile" />
               <div className="home-text">
                 <p>
                   Olá, me chamo <span>Lucas Oliveira</span> e sou um Desenvolvedor de Software apaixonado por tecnologia e cultura geek.
@@ -66,12 +68,6 @@ function Home() {
           </div>
         </ContainerRight>
       </main>
-      <div className="container-gif-home">
-        <div></div>
-        <div className="background-gif-home" >
-          <div className="background-home-gradient"></div>
-        </div>
-      </div>
     </div>
   )
 }

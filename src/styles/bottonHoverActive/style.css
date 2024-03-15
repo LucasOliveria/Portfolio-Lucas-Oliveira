@@ -8,3 +8,16 @@
 .button-hover-active:active button {
   transform: scale(0.9);
 }
+
+@media (max-width: 1181px) {
+  .button-hover-active:hover button {
+    background-image: url("../../assets/otherImages/button-template.svg");
+    color: #f0e0e0;
+  }
+
+  .button-hover-active:active button,
+  .button-hover-active:active img[alt="button-template-blur"],
+  .button-hover-active:active button {
+    transform: scale(1);
+  }
+}
