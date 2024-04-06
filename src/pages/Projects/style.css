@@ -107,3 +107,35 @@ img[alt="robot-cute-proto-3"] {
   bottom: -7rem;
   left: -4rem;
 }
+
+@media (max-width:431px) {
+  .container-gif-projects {
+    background-size: cover;
+  }
+}
+
+@media (max-width:790px) {
+  .background-gradient-up-projects {
+    height: 10rem;
+  }
+
+  .background-gradient-down-projects {
+    height: 10rem;
+  }
+
+  .projects-page-container {
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  img[alt="arrow-right"],
+  img[alt="arrow-left"] {
+    display: none;
+  }
+
+  .project-carousel {
+    width: 29.2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

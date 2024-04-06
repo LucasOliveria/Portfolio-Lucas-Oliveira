@@ -15,6 +15,10 @@
   margin-bottom: 4rem;
 }
 
+img[alt="screen-template-education-mobile"] {
+  display: none;
+}
+
 .education-text {
   top: 1.32rem;
   left: 3rem;
@@ -43,4 +47,34 @@ img[alt="cyberpunk-ship"] {
 img[alt="cyberpunk-ship"] {
   bottom: -7.2rem;
   right: 1rem;
+}
+
+@media (max-width:431px) {
+  .container-gif-education {
+    background-size: cover;
+  }
+}
+
+@media (max-width:790px) {
+  .background-gradient-up-education {
+    height: 15rem;
+  }
+
+  .background-gradient-down-education {
+    height: 15rem;
+  }
+
+  img[alt="screen-template-education-mobile"] {
+    display: block;
+  }
+
+  img[alt="screen-template-education"] {
+    display: none;
+  }
+
+  .education-text {
+    top: 2.3rem;
+    left: 2.7rem;
+    right: 2.6rem;
+  }
 }

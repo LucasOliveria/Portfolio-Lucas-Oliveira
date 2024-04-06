@@ -60,3 +60,39 @@ img[alt="robot-cute-proto-2"] {
   top: -10rem;
   right: 3rem;
 }
+
+@media (max-width:431px) {
+  .container-gif-skills {
+    background-size: cover;
+  }
+}
+
+@media (max-width:790px) {
+  .background-gradient-up-skills {
+    height: 15rem;
+  }
+
+  .background-gradient-down-skills {
+    height: 20rem;
+  }
+
+  .skill-box:nth-of-type(2) {
+    margin-top: 2rem;
+  }
+
+  .skill-box:nth-of-type(3),
+  .skill-box:nth-of-type(5),
+  .skill-box:nth-of-type(7),
+  .skill-box:nth-of-type(9),
+  .skill-box:nth-of-type(11) {
+    margin-top: -2rem;
+  }
+
+  .skill-box:hover {
+    transform: scale(1);
+  }
+
+  .skill-box:active {
+    transform: scale(1);
+  }
+}

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import screenTemplateEducation from "../../assets/screenTemplates/screen-template-education.svg";
+import screenTemplateEducationMobile from "../../assets/screenTemplates/screen-template-education-mobile.svg";
 import ContainerLeft from '../../components/ContainerLeft';
 import ContainerRight from '../../components/ContainerRight';
 import { educations } from '../../database/educationDb';
@@ -28,6 +29,7 @@ function Education() {
             return (
               <div key={id} className="education-box">
                 <div >
+                  <img src={screenTemplateEducationMobile} alt="screen-template-education-mobile" />
                   <img src={screenTemplateEducation} alt="screen-template-education" />
                   <div className="education-text">
                     <h2><span>{title}</span></h2>

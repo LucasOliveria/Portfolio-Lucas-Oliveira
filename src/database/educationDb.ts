@@ -11,7 +11,7 @@ type TEducation = {
 export const educations: TEducation[] = [
   {
     id: 1,
-    title: "Análise e Desenvolvimento de Sistemas (EAD) - Faculdade Estácio (012024 - 03/2026)",
+    title: "Análise e Desenvolvimento de Sistemas (EAD) - Faculdade Estácio (01/2024 - 03/2026)",
     text: "Implementação de projetos, documentação, especificação, testes, implementação e manutenção de sistemas computacionais e software.",
     ship: cyberpunkShip1
   },
