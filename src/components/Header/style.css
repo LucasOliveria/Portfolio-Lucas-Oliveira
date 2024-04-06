@@ -121,8 +121,6 @@ img[alt="close button"] {
   transform: scale(1.15);
 }
 
-
-
 @media (max-width:932px) {
   header {
     min-height: 6rem;
