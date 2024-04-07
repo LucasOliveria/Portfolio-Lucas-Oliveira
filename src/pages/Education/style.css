@@ -55,7 +55,7 @@ img[alt="cyberpunk-ship"] {
   }
 }
 
-@media (max-width:932px) {
+@media (max-width:790px) {
   .background-gradient-up-education {
     height: 15rem;
   }

@@ -126,7 +126,7 @@ img[alt="robot-cute-proto-1"] {
   bottom: -6rem;
 }
 
-@media (max-width:932px) {
+@media (max-width:790px) {
   img[alt="screen-template-about-me"] {
     display: none;
   }

@@ -122,7 +122,7 @@ img[alt="robot-cute-proto-3"] {
   left: -4rem;
 }
 
-@media (max-width:932px) {
+@media (max-width:790px) {
   .into-container-right-generic {
     width: 33rem;
     height: 65rem;
