@@ -158,7 +158,7 @@ function Header() {
           </ul>
           <div className='social-menu'>
             <a href="mailto:lucasoliveiralog@hotmail.com">
-              <img src={emailIcon} alt="email-icon" />
+              <img src={emailIcon} alt="email-icon" title="lucasoliveiralog@hotmail.com" />
             </a>
             <a href="http://www.linkedin.com/in/lucas-oliveira-5b8a5532" target='_blank' >
               <img src={linkedinIcon} alt="linkedin-icon" />

@@ -57,10 +57,10 @@ function Home() {
                   Olá, me chamo <span>Lucas Oliveira</span> e sou um Desenvolvedor de Software apaixonado por tecnologia e cultura geek.
                 </p>
                 <p>
-                  Comecei minha migração de carreira para a área de T.I. em 2022, desenvolvendo habilidades sólido no Frontend, Backend e  em projetos autônomos para <span>web</span> no GitHub e em produção em plataformas de deploy.
+                  Comecei minha migração de carreira para a área de T.I. em 2022, desenvolvendo habilidades sólidas no Frontend e Backend, com projetos autônomos para <span>web</span> no GitHub e produções em plataformas de deploy.
                 </p>
                 <p>
-                  Comunicação, foco nos detalhes, proatividade, autonomia e aptidão para aprender <span>novas ferramentas e habilidades</span> de maneira rápida são os principais pontos que me definem profissionalmente. Com os anos de experiência pude desenvolver meu senso de responsabilidade para com os resultados, buscando melhores maneiras de solucionar os problemas.
+                  Comunicação, foco nos detalhes, proatividade, autonomia e aptidão para aprender <span>novas ferramentas e habilidades</span> de maneira rápida são os principais pontos que me definem profissionalmente. Com os anos de experiência, pude desenvolver meu senso de responsabilidade com os resultados desejados, buscando melhores maneiras de solucionar problemas.
                 </p>
               </div>
             </div>

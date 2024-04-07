@@ -42,16 +42,23 @@
 }
 
 .container-social-media {
+  margin-top: 4rem;
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 2rem;
   margin-bottom: 1.6rem;
 }
 
-.container-social-media p {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--ciano-color);
+.box-social-media {
+  cursor: pointer;
+}
+
+.box-social-media img {
+  transition: all 0.3s;
+}
+
+.box-social-media img:hover {
+  transform: scale(1.15);
 }
 
 .container-form-contact {

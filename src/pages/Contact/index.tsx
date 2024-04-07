@@ -57,21 +57,24 @@ function Contact() {
             <div className='contact-text'>
               <h2>Entre em contato</h2>
               <p className='p-13'>
-                Eu adoraria escutar sobre seu trabalho atual e como eu poderia ajudar. Atualmente estou procurando por um cargo e aberto para várias oportunidades.
+                Eu adoraria escutar sobre seu trabalho e como poderia ajudá-lo. Atualmente procuro por um cargo e estou aberto à várias oportunidades.
               </p>
-              <div className='container-social-media'>
-                <img src={emailIcon} alt="social-icon" />
-                <p>lucasoliveiralog@hotmail.com</p>
-              </div>
-              <div className='container-social-media'>
-                <img src={linkedinIcon} alt="social-icon" />
-                <p>
-                  linkedin.com/in/lucas-oliveira-5b8a5532/
-                </p>
-              </div>
-              <div className='container-social-media'>
-                <img src={githubIcon} alt="social-icon" />
-                <p>github.com/LucasOliveria</p>
+              <div className="container-social-media">
+                <div className='box-social-media'>
+                  <a href="mailto:lucasoliveiralog@hotmail.com">
+                    <img src={emailIcon} alt="social-icon" title="lucasoliveiralog@hotmail.com" />
+                  </a>
+                </div>
+                <div className='box-social-media'>
+                  <a href="http://www.linkedin.com/in/lucas-oliveira-5b8a5532" target='_blank' >
+                    <img src={linkedinIcon} alt="social-icon" />
+                  </a>
+                </div>
+                <div className='box-social-media'>
+                  <a href="http://github.com/LucasOliveria" target="_blank">
+                    <img src={githubIcon} alt="social-icon" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
