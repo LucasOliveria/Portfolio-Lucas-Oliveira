@@ -1,5 +1,6 @@
 .container-right {
   min-width: calc(100vw - 65rem);
+  margin-right: 40px;
 }
 
 .box-right {
@@ -52,7 +53,7 @@ img[alt="tech-line-down"] {
   }
 }
 
-@media (min-width: 1900px) and (max-width:2600px) {
+@media (min-width: 1900px) {
   .container-right {
     min-width: 75rem;
   }
@@ -62,5 +63,6 @@ img[alt="tech-line-down"] {
   .container-right {
     width: 100vw;
     margin-bottom: 5rem;
+    margin-right: 0;
   }
 }

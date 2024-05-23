@@ -29,3 +29,21 @@
     overflow-y: auto;
   }
 }
+
+@media (min-width: 2300px) and (max-width:3000px) {
+  .main-portfolio {
+    height: calc(100vh - 4.5rem);
+    padding-top: 35rem;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 3001px) {
+  .main-portfolio {
+    height: calc(100vh - 4.5rem);
+    padding-top: 60rem;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+  }
+}

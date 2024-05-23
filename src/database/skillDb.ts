@@ -1,15 +1,17 @@
-import javaScript from "../assets/skills/js.svg"
-import node from "../assets/skills/nodes-line.svg"
-import reactjs from "../assets/skills/reactjs.svg"
-import html from "../assets/skills/html.svg"
-import css from "../assets/skills/css.svg"
-import typescript from "../assets/skills/typescript.svg"
-import angular from "../assets/skills/angular.svg"
-import sql from "../assets/skills/SQL.svg"
 import api from "../assets/skills/API.svg"
-import nest from "../assets/skills/nest.svg"
+import sql from "../assets/skills/SQL.svg"
+import angular from "../assets/skills/angular.svg"
+import css from "../assets/skills/css.svg"
 import git from "../assets/skills/git.svg"
 import github from "../assets/skills/github.svg"
+import html from "../assets/skills/html.svg"
+import javaScript from "../assets/skills/js.svg"
+import nest from "../assets/skills/nest.svg"
+import node from "../assets/skills/nodes-line.svg"
+import reactjs from "../assets/skills/reactjs.svg"
+import typescript from "../assets/skills/typescript.svg"
+// import python from "../assets/skills/python.svg"
+// import docker from "../assets/skills/docker.svg"
 
 type TSkill = {
   id: number;
@@ -91,5 +93,17 @@ export const skills: TSkill[] = [
     symbol: github,
     site: "https://github.com/"
   },
+  // {
+  //   id: 13,
+  //   name: "Python",
+  //   symbol: python,
+  //   site: "https://www.python.org/"
+  // },
+  // {
+  //   id: 14,
+  //   name: "Docker",
+  //   symbol: docker,
+  //   site: "https://www.docker.com/"
+  // },
 
 ]

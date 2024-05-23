@@ -18,6 +18,13 @@ function Header() {
 
   function handleNavigatAnimate(page: string) {
     setOpenMenu(false);
+    const main = document.querySelector(".main-portfolio")
+
+    if (main instanceof HTMLElement) {
+      main.style.scrollBehavior = "unset";
+      main.scrollTo(0, 0)
+    }
+
 
     if (page !== location.pathname) {
       if (location.pathname === "/home") {

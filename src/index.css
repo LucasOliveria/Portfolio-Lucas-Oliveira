@@ -142,3 +142,15 @@ img[alt="robot-cute-proto-3"] {
     padding: 0 25rem;
   }
 }
+
+@media (min-width: 2300px) and (max-width:3000px) {
+  body {
+    padding: 0 50rem;
+  }
+}
+
+@media (min-width: 3001px) {
+  body {
+    padding: 0 120rem;
+  }
+}
