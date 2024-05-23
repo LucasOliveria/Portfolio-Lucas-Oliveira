@@ -17,7 +17,7 @@ function Home() {
   async function handleDownloadFile() {
     const timestamp = new Date().getTime();
 
-    setDownload(`https://drive.google.com/uc?export=download&id=153RxDbwHyYKcPfu12_dow-5PqHJDJtVj&t=${timestamp}`);
+    setDownload(`https://drive.google.com/uc?export=download&id=1uiS6YX8_vLa8XXu-J0EbpMOxbR6zts59&t=${timestamp}`);
   }
 
   useEffect(() => {
